@@ -1,8 +1,8 @@
-# Title as a short noun phrase
+# Data Products are Immutable
 
-Category: Interoperability/Quality/...
-[Platform: Databricks/Snowflake/BigQuery/...]
-Status: Accepted/Proposed/Rejected/Deprecated/Superseded at YEAR-MONTH-DAY.
+Category: Interoperability/Quality/...  
+[Platform: Databricks/Snowflake/BigQuery/...]  
+Status: Accepted/Proposed/Rejected/Deprecated/Superseded  
 Tags: ...
 
 ## Context
@@ -37,5 +37,4 @@ Use the "we will ..." styles with active voice.
 
 ## Verification / Adherence / Monitoring
 
-- How to monitor the policy adoption?
-- How to detect policy drift?
+- Run a defined query with a fixed processing timestamp (see [bitemporal](bitemporal.md)) on a data product twice, same result count expected.

@@ -2,6 +2,6 @@
 
 ## Policies
 
-[Template](policies/policy-template)
+[Template](policies/_template)
 
 - [Policy: ISO 8601](iso8601)
