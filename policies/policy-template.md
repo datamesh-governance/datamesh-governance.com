@@ -20,9 +20,11 @@ Use the "we will ..." styles with active voice.
 ## Consequences
 
 - List of concrete consequences and effects.
--
 
-## Options
+## Follow-Up Questions
+
+
+## Considered Alternatives
 
 - Before decision: After the context, start with writing up the options with their possible benefits and consequences in here.
 - After decision: no longer needed; may help to document the discussion; archive it at the end of the file
