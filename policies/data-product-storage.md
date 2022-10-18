@@ -1,9 +1,9 @@
 # Data Product Storage
 
 Category: Interoperability  
-Platform: Databricks, Azure Synapse Analytics  
+Platform: Databricks, Azure Synapse Analytics, Generic Data Lake  
 Status: Proposed 2022-10-16  
-Tags: ...
+Tags: platform, storage, data lake
 
 ## Context
 
