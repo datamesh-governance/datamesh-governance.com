@@ -1,24 +1,45 @@
 # datamesh-governance.com
 
-## Global Policies
+A curated list of examples for Data Mesh guiding values, architecture decisions, and global policies to support a federated governance team.
 
-[Template](policies/_template)
+Architecture descions and policies are formulated as Architecture Decision Records (ADRs) using this [template](policies/_template.md).
 
+_Note that some examples are only applicable in certain contexts or with specific data platforms._
+
+
+## Guiding Values
+
+- Minimize global decisions
+- Embrace bounded contexts
+- Standardize for interoperability
+- Enforce consistent security 
+- Design for automation 
+
+## Architecture Decisions
 
 ### Data Platform
 
-- AWS Athena as Data Platform
+- AWS Athena as Query-Engine
 - AWS Redshift as Data Platform
+- AWS S3 as Storage for Data Products
+- AWS Lake Formation as Data Catalog
 - GCP BigQuery as Data Platform
+- GCP BigQuery as Storage for Data Products
+- GCP Cloud Storage as Storage for Data Products
+- GCP Dataplex as Data Catalog
 - Azure Synapse Analytics as Data Platform
+- [Azure ADLS as Storage for Data Products](policies/platform/data-product-storage.md)
+- Azure Purview as Data Catalog
 - Snowflake as Data Platform
-- Databricks as Data Platform
-- S3 as Storage for Data Products
-- GCP as Storage for Data Products
-- BigQuery as Storage for Data Products
-- Azure ADLS as Storage for Data Products
+- [Databricks as Data Platform](policies/platform/databricks-as-data-platform.md)
+- Databricks Unity as Data Catalog
+- Collibra as Data Catalog
+- Atlan as Data Catalog
+- Simple Wiki Page as Data Catalog
+- Presto as On-Premise Query-Engine
+- MinIO as On-Premise Storage for Data Products
 
-### Isolation
+### Structure
 - Separate Account per Domain Team
 - Separate Database per Domain Team
 - Separate Schema per Domain Team
@@ -28,8 +49,11 @@
     - 1 bucket per data product
 - Address scheme
 
+## Policies
+
 ### Interoperability
-- Parquet File Format
+- JSON File Format
+- [Parquet File Format](policies/interoperability/parquet-file-format.md)
 - Delta File Format
 - Partitioning Keys
 - Timestamp as ISO-8601 Strings
@@ -57,14 +81,14 @@
 - Consents Provided by Checkout Domain
 
 ### Privacy & Compliance
-- Right to be Forgotten By Tombstone Events
-- Data Stored in Customer's Business Region
 - Data Classification Scheme
-- PII Anonymization Requirements
+- Data Stored in Customer's Business Region
+- PII Anonymization
 - Data Retention Periods
+- Right to be Forgotten By Tombstone Events
 
 ### Security
-- Encryption at Rest
+- [Encryption at Rest](policies/security/encryption-at-rest.md)
 - Encryption at Transit
 - VPC
 
@@ -79,4 +103,7 @@
 ### Other
 - Generic Policy
 
+## Template
+
+- [Template](policies/_template.md)
 
