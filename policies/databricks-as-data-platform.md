@@ -1,8 +1,8 @@
 # Databricks as Data Platform
 
-Category: Platform / Architecture Decision
-Status: Proposed at 2022-10-18
-Tags: platform, architecture decision, databricks
+Category: Platform / Architecture Decision  
+Status: Proposed at 2022-10-18  
+Tags: platform, architecture decision, databricks  
 
 ## Context
 
@@ -13,27 +13,25 @@ We use Microsoft Azure for our operational systems. We are a regulated company i
 
 ## Decision
 
-One or two sentences describing the decision on a high level.
+We use Azure Databricks as our central data platform.
 
-More details in additional paragraphs.
-
-Use the "we will ..." styles with active voice.
+![](https://d33wubrfki0l68.cloudfront.net/a15cf04d5877ccea0a278c4c0318a1f491702425/2bbf4/images/databricks.png.webp)
 
 ## Consequences
 
-- List of concrete consequences and effects.
--
+- Business partner is Microsoft, no separate contract with Databricks, Inc required.
+- Expected costs: XXX USD/month
+- Analytical data is stored as files in Azure Data Lake Storage Gen2 (TODO: Link to Policy)
+- Software developers will mostly write transformations as notebooks using PySpark, SQL or Scala
 
 ## Options
 
-- Before decision: After the context, start with writing up the options with their possible benefits and consequences in here.
-- After decision: no longer needed; may help to document the discussion; archive it at the end of the file
+- Azure Synapse Analytics
+- Snowflake deployed to Azure
 
 ## Automation
 
-- How to implement it as code?
-- Is there a template from the enabling team?
-- Is there a platform service provided by the platform team?
+- There is an excellent Terraform provider for Databricks available to setup infrastructure: https://registry.terraform.io/providers/databricks/databricks/latest/docs
 
 ## Verification / Adherence / Monitoring
 
