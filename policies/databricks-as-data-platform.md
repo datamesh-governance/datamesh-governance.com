@@ -21,6 +21,7 @@ We use Azure Databricks as our central data platform, similiar to the [tech stac
 
 - Business partner is Microsoft, no separate contract with Databricks, Inc required.
 - Expected costs: XXX USD/month
+- A data platform teams needs to manage the Databricks account(s).
 - Analytical data needs to be stored as files in Azure Data Lake Storage Gen2 (TODO: Link to policy)
 - Software developers will mostly write transformations as notebooks using PySpark, SQL or Scala
 
