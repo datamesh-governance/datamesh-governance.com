@@ -1,9 +1,9 @@
 # Title as a short noun phrase
 
-Category: Interoperability/Quality/...
-[Platform: Databricks/Snowflake/BigQuery/...]
-Status: Accepted/Proposed/Rejected/Deprecated/Superseded
-Tags: ...
+Category: Interoperability/Quality/...  
+[Platform: Databricks/Snowflake/BigQuery/...]  
+Status: Accepted/Proposed/Rejected/Deprecated/Superseded  
+Tags: ...  
 
 ## Context
 
