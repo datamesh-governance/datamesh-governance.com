@@ -1,5 +1,7 @@
 # datamesh-governance.com
 
+## Data Mesh Governance by Example
+
 A curated list of examples for Data Mesh guiding values, architecture decisions, and global policies to support a federated governance team.
 
 Architecture descions and policies are formulated as Architecture Decision Records (ADRs) using this [template](policies/_template.md).
