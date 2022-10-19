@@ -29,7 +29,7 @@ Use the "we will ..." styles with active voice.
 - Before decision: After the context, start with writing up the options with their possible benefits and consequences in here.
 - After decision: no longer needed; may help to document the discussion; archive it at the end of the file
 
-## Automation
+## Policy as Code / Automation
 
 - How to implement it as code?
 - Is there a template from the enabling team?
