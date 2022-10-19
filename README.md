@@ -67,6 +67,9 @@ _Note that some examples are only applicable in certain contexts or with specifi
 - Mandatory Ownership Information
 - Mandatory Tags
 
+### Quality
+- Minimum level quality of a data product
+
 ### Documentation
 - Documentation in Wiki
 - Documentation in Data Catalog
@@ -76,14 +79,16 @@ _Note that some examples are only applicable in certain contexts or with specifi
 ### Access Control
 - Access granted through AWS IAM Policies
 - ACLs managed by Domain Teams
+- Reassess after x month
 
 ### Consent Management
 - Consents Provided by Checkout Domain
 
 ### Privacy & Compliance
-- Data Classification Scheme
+- Data Classification Scheme (restricted, sensitive, unrestricted)
 - Data Stored in Customer's Business Region
 - PII Anonymization
+- PHI (protected health info)
 - Data Retention Periods
 - Right to be Forgotten By Tombstone Events
 
