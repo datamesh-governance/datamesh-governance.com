@@ -104,7 +104,7 @@ _Note that some examples are only applicable in certain contexts or with specifi
 - Observability Metrics
 - Cost reporting
 
-### Domain Ownership (TBD)
+### Ownership (TBD)
 - Ownership for New Data Products
 - Ownership for Legacy Data Products
 
