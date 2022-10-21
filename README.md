@@ -58,11 +58,14 @@ _Note that some examples are only applicable in certain contexts or with specifi
 - JSON File Format
 - [Parquet File Format](policies/interoperability/parquet-file-format.md)
 - Delta File Format
+- Table Naming Conventions
+- Column Naming Conventions
+- File Name Conventions
 - Partitioning Keys
 - Timestamp as ISO-8601 Strings
 - Money amounts in cents as integers
-- Common ID Naming Conventions
-- Context Mapping (?)
+- Common IDS
+- Common Fields Names
 
 ### Discoverability
 - Registration of Data Product in Wiki
