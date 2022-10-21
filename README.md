@@ -66,6 +66,7 @@ _Note that some examples are only applicable in certain contexts or with specifi
 - Money amounts in cents as integers
 - Common IDS
 - Common Fields Names
+- Bitemporal Timestamp Fields
 
 ### Discoverability
 - Registration of Data Product in Wiki
