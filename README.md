@@ -76,7 +76,7 @@ _Note that some examples are only applicable in certain contexts or with specifi
 - Partitioning Keys
 - Timestamp as ISO-8601 Strings
 - Money amounts in cents as integers
-- Common IDS
+- Common IDs
 - Common Fields Names
 - Bitemporal Timestamp Fields
 
