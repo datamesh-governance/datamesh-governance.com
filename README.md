@@ -10,7 +10,7 @@ The Data Mesh Governance team consists of representatives from the domain teams 
 
 They are temporarily supported by a subject-matter experts, to address special issues, e.g. concerning legal, compliance, and security.
 
-Together, they make sure that data products in the mesh are interoperable and can be used securely. For this, they agree on a few architectural decisions and global policies. They also work to ensure that policies are automated by the platform.
+Together, they make sure that data products in the mesh are interoperable and can be used securely. For this, they agree on a few architectural decisions and global policies. To make it easy for domain teams to implement the policies, they specify the requirements for the data platform to automate the policies as much as possible.
 
 However, it is always up to the domain teams to adhere to the policies.
 
