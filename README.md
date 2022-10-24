@@ -1,16 +1,19 @@
-# datamesh-governance.com
-
-![Data Mesh Governance](images/governance.png)
-
-## Data Mesh Governance by Example
+# Data Mesh Governance by Example
 
 A curated list of examples for Data Mesh guiding values, architecture decisions, and global policies to support a federated governance team.
 
-[//]: # (The Data Mesh Governance team consists of representatives from the domain teams and)
+## Federated Governance
 
-[//]: # (the data platform team.)
+![Data Mesh Governance](images/governance.png)
 
-[//]: # (They are temporarily supported by a subject matter experts, to address special issues, e.g. concerning legal, compliance, and security.)
+The Data Mesh Governance team consists of representatives from the domain teams and the data platform team.
+
+They are temporarily supported by a subject-matter experts, to address special issues, e.g. concerning legal, compliance, and security.
+
+Together, they make sure that data products in the mesh are interoperable and can be used securely. For this, they agree on a few architectural decisions and global policies. They also work to ensure that policies are automated by the platform.
+
+However, it is always up to the domain teams to adhere to the policies.
+
 
 
 ## Guiding Values
