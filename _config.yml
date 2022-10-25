@@ -1,0 +1,4 @@
+plugins:
+  - jekyll-sitemap
+markdown: kramdown
+title: Data Mesh Governance by Example
