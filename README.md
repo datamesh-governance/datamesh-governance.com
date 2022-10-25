@@ -17,6 +17,8 @@ However, it is always up to the domain teams to adhere to the policies.
 
 ## Guiding Values
 
+The following proposed guiding values are based on the guiding values, described by Zhamak Dehghani in her book in chapter 5.
+
 - Minimize global decisions
 - Optimize for generalist majority
 - Embrace bounded contexts
