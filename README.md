@@ -2,7 +2,6 @@
 
 A curated list of examples for Data Mesh guiding values, architecture decisions, and global policies to support a federated governance team.
 
-## Federated Governance
 
 ![Data Mesh Governance](images/governance.png)
 
