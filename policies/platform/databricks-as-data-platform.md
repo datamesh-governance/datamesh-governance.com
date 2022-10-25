@@ -1,7 +1,7 @@
 # Databricks as Data Platform
 
 Category: Platform / Architecture Decision  
-Status: Proposed at 2022-10-18  
+Status: Proposed  
 Tags: platform, architecture decision, databricks  
 
 ## Context

@@ -37,5 +37,5 @@ We use Microsoft-managed encryption keys (MMK).
 
 ## Verification / Adherence / Monitoring
 
-- not required
+- Not required, encryption-at-rest is enabled in all Storage Accounts
 
