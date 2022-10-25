@@ -129,7 +129,3 @@ _Note that some examples are only applicable in certain contexts or with specifi
 ## Template
 
 - [Template](policies/_template.md)
-
-<!-- 100% privacy friendly analytics -->
-<script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
