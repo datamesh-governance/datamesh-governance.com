@@ -1,4 +1,5 @@
 plugins:
   - jekyll-sitemap
 markdown: kramdown
+name: "Data Mesh Governance by Example"
 title: null
