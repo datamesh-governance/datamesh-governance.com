@@ -56,7 +56,7 @@ _Note that some examples are only applicable in certain contexts or with specifi
 - MinIO as On-Premise Storage for Data Products
 
 ### Structure
-- [Separate Account per Domain Team](architecture-decisions/separate-account-per-team.md)
+- [Separate Account per Domain Team](architecture-decisions/separate-account-per-domain-team.md)
 - Separate Database per Domain Team
 - Separate Schema per Domain Team
 - Bucket/Folder Structure

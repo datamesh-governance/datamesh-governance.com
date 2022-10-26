@@ -1,4 +1,4 @@
-# Separate Accounts per Team
+# Separate Account per Domain Team
 
 Platform: AWS  
 Status: Proposed  
