@@ -28,7 +28,7 @@ The following proposed guiding values are based on the guiding values, described
 
 ## Architecture Decisions
 
-Architecture decisions and policies are formulated as Architecture Decision Records (ADRs) using this [template](policies/_template.md).
+Architecture decisions and policies are formulated as Architecture Decision Records (ADRs) using this [template](policies/template.md).
 
 _Note that some examples are only applicable in certain contexts or with specific data platforms._
 
@@ -130,4 +130,4 @@ _Note that some examples are only applicable in certain contexts or with specifi
 
 ## Template
 
-- [Template](policies/_template.md)
+- [Template](policies/template.md)
