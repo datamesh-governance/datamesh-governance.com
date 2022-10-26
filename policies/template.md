@@ -1,9 +1,8 @@
 # Title as a short noun phrase
 
 Category: Interoperability/Quality/...  
-[Platform: Databricks/Snowflake/BigQuery/...]  
-Status: Accepted/Proposed/Rejected/Deprecated/Superseded  
-Tags: ...  
+[Platform: AWS/BigQuery/Azure/Databricks/Snowflake/...]  
+Status: Proposed/Accepted/Rejected/Deprecated/Superseded  
 
 ## Context
 
@@ -19,23 +18,24 @@ Use the "we will ..." styles with active voice.
 
 ## Consequences
 
-- List of concrete consequences and effects.
-
-## Follow-Up Questions
-
+- List of concrete consequencess, effects, outcomes
+- New things that need to be learnt or understood by domain teams
+- Required services by the platform
+- Costs
+- Follow-Up Questions
 
 ## Considered Alternatives
 
 - Before decision: After the context, start with writing up the options with their possible benefits and consequences in here.
 - After decision: no longer needed; may help to document the discussion; archive it at the end of the file
 
-## Policy as Code / Automation
+## Policy as Code
 
-- How to implement it as code?
-- Is there a template from the enabling team?
-- Is there a platform service provided by the platform team?
+- How to implement this policy as code?
+- Can the enabling team provide a template or best practices?
+- Is there a platform service needed from the platform team?
 
-## Verification / Adherence / Monitoring
+## Monitoring
 
 - How to monitor the policy adoption?
 - How to detect policy drift?
