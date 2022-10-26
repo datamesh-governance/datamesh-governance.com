@@ -3,11 +3,11 @@
 Category: Quality  
 Platform: BigQuery  
 Status: Proposed  
-Tags: retire, BigQuery
 
 ## Context
 
-Unused data products create no value, but require effort to maintain.
+Unused data products create no value. 
+They require effort to maintain.
 
 ## Decision
 
