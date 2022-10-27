@@ -88,6 +88,7 @@ _Note that some examples are only applicable in certain contexts or with specifi
 - Mandatory Tags
 
 ### Quality
+- Unused data products get retired after 6 months
 - Minimum level quality of a data product
 
 ### Documentation
