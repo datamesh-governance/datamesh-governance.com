@@ -82,8 +82,8 @@ _Note that some examples are only applicable in certain contexts or with specifi
 - Bitemporal Timestamp Fields
 
 ### Discoverability
+- [Tagging Tables as Data Products](policies/discoverability/tagging-tables-as-data-products-databricks-unity-data-catalog-tagging.md)
 - Registration of Data Product in Wiki
-- Registration of Data Product in Data Catalog
 - Mandatory Ownership Information
 - Mandatory Tags
 
