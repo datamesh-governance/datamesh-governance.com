@@ -72,9 +72,9 @@ _Note that some examples are only applicable in certain contexts or with specifi
 ## Policies
 
 ### Interoperability
-- JSON File Format
 - [Parquet File Format](policies/interoperability/parquet-file-format.md)
-- Delta File Format
+- [Delta File Format](policies/interoperability/delta-file-format.md)
+- JSON File Format
 - Table Naming Conventions
 - Column Naming Conventions
 - File Name Conventions

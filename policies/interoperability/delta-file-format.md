@@ -1,8 +1,8 @@
-# Parquet File Format
+# Delta File Format
 
 Category: Interoperability  
 Platform: Databricks, Azure Synapse Analytics, Generic Data Lake  
-Status: Proposed
+Status: Proposed  
 
 ## Context
 
@@ -14,18 +14,18 @@ We assume that data products frequently will be combined across domains.
 
 ## Decision
 
-We use Delta as file format for data products.
+We use Apache Parquet for data products.
 
 ## Consequences
 
-- Software engineers need to learn Delta and Parquet file format
-- Delta is still not a wide-spread format beyond Databricks and Azure, limits use with other tools
-- Low storage and IO costs through compression
-- Fast querying and processing, as column-oriented file format
-- Additional transaction log
-- supports update and delete operations -> Do we want to use this feature for data products?
-- Files may be fragmented after updates
-- Time travel is possible
+- Low storage and IO costs
+- Fast querying and processing
+- Software engineers need to learn Parquet file format.
+- Append only
+- binary ->  efficient storage -> IO optimized
+- column-oriented -> efficient JOIN operations
+- (limited) meta data included
+- machine-readable
 
 ## Follow-Up Questions
 
@@ -37,12 +37,12 @@ We use Delta as file format for data products.
 ## Considered Alternatives
 
 - JSON
-- Parquet
+- Delta
 - Multi-format
 
 ## Automation
 
-- Databricks comes with Delta support out of the box
+- Databricks comes with Parquet support out of the box
 - Tutorials provided by enabling team
 
 ## Verification / Adherence / Monitoring
