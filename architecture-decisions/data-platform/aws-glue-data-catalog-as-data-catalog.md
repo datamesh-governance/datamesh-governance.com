@@ -25,7 +25,8 @@ We use AWS Glue Data Catalog as Data Catalog for Data Products
 - The AWS Glue Data Catalog is basically a Hive Metastore, that integrates well with many data tools
 - Databases and tables defined in AWS Glue Data Catalog are also available in AWS Lake Formation for further data governance capabilities
 - AWS Glue Data Catalog search capabilities are limited, e.g. cannot search for tables tagged with a specific property, such as `dataproduct=true`
-- No cross-account searches or references. We need a policy under which AWS account we register data products.
+- No cross-account searches or references. We need a policy under which AWS account we register data products
+- As [AWS Glue API](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog.html) is available for further automation
 
 ## Considered Alternatives
 
