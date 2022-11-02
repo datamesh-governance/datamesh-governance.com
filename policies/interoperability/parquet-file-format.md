@@ -7,7 +7,7 @@ Tags: file-format
 
 ## Context
 
-Data products are stored as files on Azure Data Lake Storage Gen2 ([Data Product Storage](../platform/data-product-storage.md)).
+Data products are stored as files on Azure Data Lake Storage Gen2 ([Data Product Storage](../../architecture-decisions/data-platform/azure-adls-as-storage-for-data-products.md)).
 
 To ensure interoperability and consistent usage patterns, we want to agree on a common file format.
 

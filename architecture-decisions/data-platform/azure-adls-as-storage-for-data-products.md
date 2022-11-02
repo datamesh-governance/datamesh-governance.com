@@ -1,9 +1,8 @@
-# Data Product Storage
+# Azure ADLS as Storage for Data Products
 
 Category: Interoperability  
 Platform: Databricks, Azure Synapse Analytics, Generic Data Lake  
 Status: Proposed  
-Tags: platform, storage, data lake
 
 ## Context
 
@@ -24,7 +23,7 @@ We use the same Azure region for all data products (Germany West Central) in the
 ## Consequences
 
 - Performance optimized for machine learning and batch processing
-- Higher costs for SQL access (e.g. Tableau), as a separate SQL warehouse instance is neccessary
+- Higher costs for SQL access (e.g. Tableau), as a separate SQL warehouse instance is necessary
 - ADLS is not natively integrated in the Databricks platform, access management is cumbersome
 - Storage costs are reasonable, when a optimized file format is used
 - A metastore is required to define table structures/schemas

@@ -28,26 +28,30 @@ The following proposed guiding values are based on the guiding values, described
 
 ## Architecture Decisions
 
-Architecture decisions and policies are formulated as Architecture Decision Records (ADRs) using this [template](policies/template.md).
+While it is not the federated governance group's actual job to define the architecture of the data platform, 
+many of the architecture decisions have consequences for global policies and vice versa,
+e.g. for policy automation and monitoring.
+
+Architecture decisions and policies are both formulated as Architecture Decision Records (ADRs) using this [template](policies/template.md).
 
 _Note that some examples are only applicable in certain contexts or with specific data platforms._
 
 
 ### Data Platform
 
-- AWS Athena as Query-Engine
-- AWS Redshift as Data Platform
-- AWS S3 as Storage for Data Products
+- [AWS S3 as Storage for Data Products](architecture-decisions/data-platform/aws-s3-as-storage-for-data-products.md)
+- [AWS Athena as Query-Engine](architecture-decisions/data-platform/aws-athena-as-query-engine.md)
 - AWS Lake Formation as Data Catalog
+- AWS Redshift as Data Platform
 - GCP BigQuery as Data Platform
 - GCP BigQuery as Storage for Data Products
 - GCP Cloud Storage as Storage for Data Products
 - GCP Dataplex as Data Catalog
 - Azure Synapse Analytics as Data Platform
-- [Azure ADLS as Storage for Data Products](policies/platform/data-product-storage.md)
+- [Azure ADLS as Storage for Data Products](architecture-decisions/data-platform/azure-adls-as-storage-for-data-products.md)
 - Azure Purview as Data Catalog
 - Snowflake as Data Platform
-- [Databricks as Data Platform](policies/platform/databricks-as-data-platform.md)
+- [Databricks as Data Platform](architecture-decisions/data-platform/databricks-as-data-platform.md)
 - Databricks Unity as Data Catalog
 - Collibra as Data Catalog
 - Atlan as Data Catalog
@@ -56,7 +60,7 @@ _Note that some examples are only applicable in certain contexts or with specifi
 - MinIO as On-Premise Storage for Data Products
 
 ### Structure
-- [Separate Account per Domain Team](architecture-decisions/separate-account-per-domain-team.md)
+- [Separate Account per Domain Team](architecture-decisions/structure/separate-account-per-domain-team.md)
 - Separate Database per Domain Team
 - Separate Schema per Domain Team
 - Bucket/Folder Structure
