@@ -41,7 +41,7 @@ _Note that some examples are only applicable in certain contexts or with specifi
 
 - [AWS S3 as Storage for Data Products](architecture-decisions/data-platform/aws-s3-as-storage-for-data-products.md)
 - [AWS Athena as Query-Engine](architecture-decisions/data-platform/aws-athena-as-query-engine.md)
-- AWS Lake Formation as Data Catalog
+- [AWS Glue Data Catalog as Data Catalog for Data Products](architecture-decisions/data-platform/aws-glue-data-catalog-as-data-catalog.md)
 - AWS Redshift as Data Platform
 - GCP BigQuery as Data Platform
 - GCP BigQuery as Storage for Data Products
