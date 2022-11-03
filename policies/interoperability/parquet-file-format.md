@@ -6,7 +6,7 @@ Status: Proposed
 
 ## Context
 
-Data products are stored as files on Azure Data Lake Storage Gen2 ([Data Product Storage](../../architecture-decisions/data-platform/azure-adls-as-storage-for-data-products.md)).
+Data products are stored as files on S3 ([AWS S3 as Storage for Data Products](../../architecture-decisions/data-platform/aws-s3-as-storage-for-data-products.md)).
 
 To ensure interoperability and consistent usage patterns, we want to agree on a common file format.
 

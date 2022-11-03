@@ -1,8 +1,8 @@
-# Delta File Format
+# Parquet File Format
 
 Category: Interoperability  
 Platform: Databricks, Azure Synapse Analytics, Generic Data Lake  
-Status: Proposed  
+Status: Proposed
 
 ## Context
 
@@ -14,39 +14,39 @@ We assume that data products frequently will be combined across domains.
 
 ## Decision
 
-We use Apache Parquet for data products.
+We use JSON as a file format for data products.
+
+Entries are separated with a new line ([ndson](http://ndjson.org)).
 
 ## Consequences
 
-- Low storage and IO costs
-- Fast querying and processing
-- Software engineers need to learn Parquet file format.
-- Append only
-- binary ->  efficient storage -> IO optimized
-- column-oriented -> efficient JOIN operations
-- (limited) meta data included
-- machine-readable
+- Supports complex structures, such as arrays and objects
+- No need for managing a schema to write data
+- JSON is a simple format, known to all engineers
+- Widespread across many tools (such as Kafka Connectors), which makes data ingestion simple
+- Expensive IO and retrieval costs when querying data sets, as it is not compressed
+- Full reads make JOIN operations slow and expensive, compared to column-oriented file formats
 
 ## Follow-Up Questions
 
 - Partitioning
 - How to document the schema?
 - Timestamp format
-- How to model mutable data (like master and reference data)?
 
 ## Considered Alternatives
 
-- JSON
+- CSV
+- Parquet
 - Delta
 - Multi-format
 
 ## Automation
 
-- Databricks comes with Parquet support out of the box
-- Tutorials provided by enabling team
+TBD
 
 ## Verification / Adherence / Monitoring
 
 - Query all data products ([GOV-12](datacatalog.md)) periodically and try to deserialize latest file
 - Query all data products ([GOV-12](datacatalog.md)) periodically and check suffix
-- Webhook after each data product publishing with tag `serialization:delta`
+- Webhook after each data product publishing with tag `serialization:json`
+- 
