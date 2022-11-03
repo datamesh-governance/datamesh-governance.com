@@ -29,8 +29,7 @@ The following proposed guiding values are based on the guiding values, described
 ## Architecture Decisions
 
 While it is not the federated governance group's actual job to define the architecture of the data platform, 
-many of the architecture decisions have consequences for global policies and vice versa,
-e.g. for policy automation and monitoring.
+architecture decisions have consequences for global policies and vice versa, e.g. for policy automation and monitoring.
 
 Architecture decisions and policies are both formulated as Architecture Decision Records (ADRs) using this [template](policies/template.md).
 
@@ -41,37 +40,20 @@ _Note that some examples are only applicable in certain contexts or with specifi
 
 - [AWS S3 as Storage for Data Products](architecture-decisions/data-platform/aws-s3-as-storage-for-data-products.md)
 - [AWS Athena as Query-Engine](architecture-decisions/data-platform/aws-athena-as-query-engine.md)
-- [AWS Glue Data Catalog as Data Catalog for Data Products](architecture-decisions/data-platform/aws-glue-data-catalog-as-data-catalog.md)
 - AWS Redshift as Data Platform
 - GCP BigQuery as Data Platform
-- GCP BigQuery as Storage for Data Products
 - GCP Cloud Storage as Storage for Data Products
-- GCP Dataplex as Data Catalog
 - Azure Synapse Analytics as Data Platform
 - [Azure ADLS as Storage for Data Products](architecture-decisions/data-platform/azure-adls-as-storage-for-data-products.md)
-- Azure Purview as Data Catalog
 - Snowflake as Data Platform
 - [Databricks as Data Platform](architecture-decisions/data-platform/databricks-as-data-platform.md)
-- Databricks Unity as Data Catalog
-- Collibra as Data Catalog
-- Atlan as Data Catalog
-- Simple Wiki Page as Data Catalog
 - Presto as On-Premise Query-Engine
 - MinIO as On-Premise Storage for Data Products
-
-### Structure
-- [Separate Account per Domain Team](architecture-decisions/structure/separate-account-per-domain-team.md)
-- Separate Database per Domain Team
-- Separate Schema per Domain Team
-- Bucket/Folder Structure
-    - 1 bucket for organization
-    - 1 bucket per team
-    - 1 bucket per data product
-- Address scheme
 
 ## Policies
 
 ### Interoperability
+- Address scheme
 - [Parquet File Format](policies/interoperability/parquet-file-format.md)
 - [Delta File Format](policies/interoperability/delta-file-format.md)
 - JSON File Format
@@ -85,9 +67,24 @@ _Note that some examples are only applicable in certain contexts or with specifi
 - Common Fields Names
 - Bitemporal Timestamp Fields
 
+### Isolation
+- [Separate Account per Domain Team](policies/isolation/separate-account-per-domain-team.md)
+- Separate Database per Domain Team
+- Separate Schema per Domain Team
+- Bucket/Folder Structure
+  - 1 bucket for organization
+  - 1 bucket per team
+  - 1 bucket per data product
+
 ### Discoverability
+- [AWS Glue Data Catalog as Data Catalog for Data Products](policies/discoverability/aws-glue-data-catalog-as-data-catalog.md)
+- GCP Dataplex as Data Catalog
+- Azure Purview as Data Catalog
+- Databricks Unity as Data Catalog
+- Collibra as Data Catalog
+- Atlan as Data Catalog
+- Wiki Page as Data Catalog
 - [Tagging Tables as Data Products](policies/discoverability/tagging-tables-as-data-products-databricks-unity-data-catalog-tagging.md)
-- Registration of Data Product in Wiki
 - Mandatory Ownership Information
 - Mandatory Tags
 
