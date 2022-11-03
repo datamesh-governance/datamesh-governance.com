@@ -1,4 +1,4 @@
-# Parquet File Format
+# JSON File Format
 
 Category: Interoperability  
 Platform: Databricks, Azure Synapse Analytics, Generic Data Lake  
