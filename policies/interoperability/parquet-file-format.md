@@ -6,7 +6,7 @@ Status: Proposed
 
 ## Context
 
-Data products are stored as files on S3 ([AWS S3 as Storage for Data Products](../../architecture-decisions/data-platform/aws-s3-as-storage-for-data-products.md)).
+Data products are stored as files on Azure Data Lake Storage Gen2 ([Data Product Storage](../../architecture-decisions/data-platform/azure-adls-as-storage-for-data-products.md)).
 
 To ensure interoperability and consistent usage patterns, we want to agree on a common file format.
 
@@ -14,18 +14,18 @@ We assume that data products frequently will be combined across domains.
 
 ## Decision
 
-We use Delta as file format for data products.
+We use Apache Parquet for data products.
 
 ## Consequences
 
-- Software engineers need to learn Delta and Parquet file format
-- Delta is still not a wide-spread format beyond Databricks and Azure, limits use with other tools
-- Low storage and IO costs through compression
-- Fast querying and processing, as column-oriented file format
-- Additional transaction log
-- supports update and delete operations -> Do we want to use this feature for data products?
-- Files may be fragmented after updates
-- Time travel is possible
+- Low storage and IO costs
+- Fast querying and processing
+- Software engineers need to learn Parquet file format.
+- Append only
+- binary ->  efficient storage -> IO optimized
+- column-oriented -> efficient JOIN operations
+- (limited) meta data included
+- machine-readable
 
 ## Follow-Up Questions
 
@@ -37,16 +37,16 @@ We use Delta as file format for data products.
 ## Considered Alternatives
 
 - JSON
-- Parquet
+- Delta
 - Multi-format
 
 ## Automation
 
-- Databricks comes with Delta support out of the box
+- All major data platforms come with Parquet support out of the box
 - Tutorials provided by enabling team
 
 ## Verification / Adherence / Monitoring
 
-- Query all data products ([GOV-12](datacatalog.md)) periodically and try to deserialize latest file
-- Query all data products ([GOV-12](datacatalog.md)) periodically and check suffix
+- Query all data products periodically and try to deserialize latest file
+- Query all data products periodically and check suffix
 - Webhook after each data product publishing with tag `serialization:parquet`
