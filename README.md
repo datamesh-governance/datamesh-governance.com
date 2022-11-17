@@ -53,6 +53,7 @@ _Note that some examples are only applicable in certain contexts or with specifi
 ## Policies
 
 ### Interoperability
+- [Data Product Specification](policies/interoperability/data-product-specification.md)
 - Address scheme
 - [Parquet File Format](policies/interoperability/parquet-file-format.md)
 - [Delta File Format](policies/interoperability/delta-file-format.md)

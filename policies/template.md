@@ -18,7 +18,7 @@ Use the "we will ..." styles with active voice.
 
 ## Consequences
 
-- List of concrete consequencess, effects, outcomes
+- List of concrete consequences, effects, outcomes
 - New things that need to be learnt or understood by domain teams
 - Required services by the platform
 - Costs
