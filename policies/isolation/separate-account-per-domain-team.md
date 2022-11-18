@@ -19,10 +19,10 @@ We give each team a separate AWS account.
 - Highly separated environments, by default
 - Data is protected, by default
 - Access to data products needs to actively be managed by IAM policies on S3 buckets
-- We need a (separate?) data catalog to discover available data projects
-- Other engineers cannot break things
-- We need to ensure that data flows within a data center only to avod egress costs
-- We need [AWS Organizations](https://aws.amazon.com/organizations/) that can create AWS accounts
+- We need a data catalog to discover available data projects
+- Other teams cannot break things in our account
+- We need to ensure that data flows within a data center only to avoid egress costs
+- We can use [AWS Organizations](https://aws.amazon.com/organizations/) to create and manage AWS accounts
 - Simple AWS cost overview through AWS Cost Explorer
 - Billing is consolidated by the AWS organization
 
@@ -33,5 +33,5 @@ We give each team a separate AWS account.
 ## Automation
 
 - The data platform team is asked to automate the creation of AWS accounts using self-services 
-- e.g. by a pull-request in Terraform repository
+- e.g. by a pull-request in a Terraform repository
 
