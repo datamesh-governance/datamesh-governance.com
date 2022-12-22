@@ -2,9 +2,8 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Locale;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class Validator {
 
@@ -51,11 +50,13 @@ public class Validator {
 
         assertLine(errors, policyFile, lines, "Category: " + category.substring(0, 1).toUpperCase(Locale.ROOT) + category.substring(1));
         assertNotStartsWith(errors, policyFile, lines, "Status: ");
+        assertNotStartsWith(errors, policyFile, lines, "## Options");
         assertLine(errors, policyFile, lines, "## Context");
         assertLine(errors, policyFile, lines, "## Decision");
         assertLine(errors, policyFile, lines, "## Consequences");
         assertLine(errors, policyFile, lines, "## Automation");
         assertLine(errors, policyFile, lines, "## Monitoring");
+        assertPlatformInList(errors, policyFile, lines);
 
         for(var otherPolicyOption : policyOptions) {
             if (otherPolicyOption.equals(policyFile)) {
@@ -64,6 +65,24 @@ public class Validator {
 
             assertLine(errors, policyFile, lines, "## Considered Alternatives");
             assertContains(errors, policyFile, lines, "(" + otherPolicyOption.getFileName().toString() + ")");
+        }
+    }
+
+    private static void assertPlatformInList(List<Error> errors, Path policyFile, List<String> lines) {
+        var optional = lines.stream().filter(line -> line.startsWith("Platform: ")).findFirst();
+        if (optional.isEmpty()) {
+            return;
+        }
+
+        var platform = optional.get().substring("Platform: ".length());
+        var platforms = Arrays.stream(platform.split(",")).map(String::trim).collect(Collectors.toSet());
+        var allowedPlatforms = Set.of("AWS", "Databricks", "Azure Synapse Analytics", "BigQuery", "Generic Data Lake");
+        platforms.removeAll(allowedPlatforms);
+
+        if(!platforms.isEmpty()) {
+            for (var p : platforms) {
+              errors.add(new Error(policyFile, "Platform unknown '" + p + "'"));
+            }
         }
     }
 

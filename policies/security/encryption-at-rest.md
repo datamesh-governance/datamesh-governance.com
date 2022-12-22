@@ -1,7 +1,7 @@
 # Encryption at rest
 
 Category: Security  
-Platform: Databricks/...  
+Platform: Databricks
 Tags: encryption  
 
 ## Context

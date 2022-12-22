@@ -1,7 +1,6 @@
 # Data Products are Immutable
 
 Category: Interoperability
-[Platform: Databricks/Snowflake/BigQuery/...]  
 Tags: quality
 
 ## Context
