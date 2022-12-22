@@ -74,19 +74,20 @@ _Note that some examples are only applicable in certain contexts or with specifi
 - [Separate Account per Domain Team](policies/isolation/separate-account-per-domain-team.md)
 - Separate Database per Domain Team
 - Separate Schema per Domain Team
-- Bucket/Folder Structure
-  - 1 bucket for organization
-  - 1 bucket per team
-  - 1 bucket per data product
+- Bucket Structure
+  - One bucket for organization
+  - Bucket per team
+  - Bucket per data product
 
 ### Discoverability
-- [AWS Glue Data Catalog as Data Catalog for Data Products](policies/discoverability/aws-glue-data-catalog-as-data-catalog.md)
-- GCP Dataplex as Data Catalog
-- Azure Purview as Data Catalog
-- Databricks Unity as Data Catalog
-- Collibra as Data Catalog
-- Atlan as Data Catalog
-- Wiki Page as Data Catalog
+- Data Catalog
+  - [AWS Glue Data Catalog](policies/discoverability/data-catalog/aws-glue-data-catalog-as-data-catalog.md)
+  - GCP Dataplex
+  - Azure Purview
+  - Databricks Unity
+  - Collibra
+  - Atlan
+  - Confluence
 - [Tagging Tables as Data Products](policies/discoverability/tagging-tables-as-data-products-databricks-unity-data-catalog-tagging.md)
 - Mandatory Ownership Information
 - Mandatory Tags
