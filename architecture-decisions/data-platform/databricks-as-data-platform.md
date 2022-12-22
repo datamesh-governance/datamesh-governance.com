@@ -1,7 +1,7 @@
 # Databricks as Data Platform
 
-Category: Platform / Architecture Decision  
-Status: Proposed  
+Category: Data Platform
+Platform: Databricks
 Tags: platform, architecture decision, databricks  
 
 ## Context
@@ -33,6 +33,3 @@ We use Azure Databricks as our central data platform, similiar to the [tech stac
 
 - There is a well-managed Terraform provider for Databricks available to setup infrastructure: https://registry.terraform.io/providers/databricks/databricks/latest/docs
 
-## Verification / Adherence / Monitoring
-
-Not relevent.

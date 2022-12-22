@@ -1,7 +1,7 @@
 # AWS Athena as Query Engine
 
+Category: Data Platform
 Platform: AWS  
-Status: Proposed  
 
 ## Context
 
@@ -32,4 +32,4 @@ We use AWS Athena as Query Engine.
 ## Automation
 
 - Athena databases can be created with Terraform
-- A [dbt-athena](https://github.com/Tomme/dbt-athena) integration is available to leverage dbt models with athena 
+- A [dbt-athena](https://github.com/Tomme/dbt-athena) integration is available to leverage dbt models with athena

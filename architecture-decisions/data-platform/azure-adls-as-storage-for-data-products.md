@@ -1,8 +1,7 @@
 # Azure ADLS as Storage for Data Products
 
-Category: Interoperability  
+Category: Data Platform
 Platform: Databricks, Azure Synapse Analytics, Generic Data Lake  
-Status: Proposed  
 
 ## Context
 
@@ -27,20 +26,17 @@ We use the same Azure region for all data products (Germany West Central) in the
 - ADLS is not natively integrated in the Databricks platform, access management is cumbersome
 - Storage costs are reasonable, when a optimized file format is used
 - A metastore is required to define table structures/schemas
-
-
-## Follow-up questions:
-
-- ownership (who creates the bucket)
-- which Resource group (billing): central vs. domain's
-- ACL: who grants access
-- ACL: how is it integrated?
-- As we use files, supported file format must be defined
-- Folder structure / isolation
-  - 1 bucket for organization
-  - 1 bucket per team
-  - 1 bucket per data product
-- private data sets vs. published data products
+- Follow-up questions
+  - ownership (who creates the bucket)
+  - which Resource group (billing): central vs. domain's
+  - ACL: who grants access
+  - ACL: how is it integrated?
+  - As we use files, supported file format must be defined
+  - Folder structure / isolation
+    - 1 bucket for organization
+    - 1 bucket per team
+    - 1 bucket per data product
+  - private data sets vs. published data products
 
 ## Considered Alternatives
 
@@ -50,5 +46,3 @@ We use the same Azure region for all data products (Germany West Central) in the
 
 - Terraform create Azure Storage Accounts
 - Domain teams create a pull request with new storage account
-
-

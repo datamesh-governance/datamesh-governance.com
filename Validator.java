@@ -10,7 +10,15 @@ public class Validator {
     public static void main(String[] args) throws IOException {
         List<Error> errors = new LinkedList<>();
 
-        try (var groups = Files.newDirectoryStream(Path.of("policies"))) {
+        validate(errors, "policies");
+        validate(errors, "architecture-decisions");
+
+        errors.stream().forEach(System.out::println);
+
+    }
+
+    private static void validate(List<Error> errors, String folder) throws IOException {
+        try (var groups = Files.newDirectoryStream(Path.of(folder))) {
             for (Path path : groups) {
 
 
@@ -40,15 +48,13 @@ public class Validator {
                 }
             }
         }
-
-        errors.stream().forEach(System.out::println);
-
     }
 
     private static void validatePolicy(List<Error> errors, Path policyFile, String category, List<Path> policyOptions) throws IOException {
         var lines = Files.readAllLines(policyFile, StandardCharsets.UTF_8).stream().map(String::trim).toList();
 
-        assertLine(errors, policyFile, lines, "Category: " + category.substring(0, 1).toUpperCase(Locale.ROOT) + category.substring(1));
+        String categoryTitleCase = snakeCaseToTitleCase(category);
+        assertLine(errors, policyFile, lines, "Category: " + categoryTitleCase);
         assertNotStartsWith(errors, policyFile, lines, "Status: ");
         assertNotStartsWith(errors, policyFile, lines, "## Options");
         assertLine(errors, policyFile, lines, "## Context");
@@ -66,6 +72,10 @@ public class Validator {
             assertLine(errors, policyFile, lines, "## Considered Alternatives");
             assertContains(errors, policyFile, lines, "(" + otherPolicyOption.getFileName().toString() + ")");
         }
+    }
+
+    private static String snakeCaseToTitleCase(String category) {
+        return Arrays.stream(category.split("-")).map(word -> word.substring(0, 1).toUpperCase(Locale.ROOT) + word.substring(1)).collect(Collectors.joining(" "));
     }
 
     private static void assertPlatformInList(List<Error> errors, Path policyFile, List<String> lines) {

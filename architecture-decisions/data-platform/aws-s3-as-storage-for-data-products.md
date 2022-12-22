@@ -1,7 +1,7 @@
 # AWS S3 as Storage for Data Products
 
+Category: Data Platform
 Platform: AWS  
-Status: Proposed  
 
 ## Context
 
