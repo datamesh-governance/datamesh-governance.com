@@ -14,7 +14,7 @@ One or two sentences describing the decision on a high level.
 
 More details in additional paragraphs.
 
-Use the "we will ..." styles with active voice.
+Use the "we will ..." style with active voice.
 
 ## Consequences
 
@@ -26,8 +26,9 @@ Use the "we will ..." styles with active voice.
 
 ## Considered Alternatives
 
-- Before decision: After the context, start with writing up the options with their possible benefits and consequences in here.
-- After decision: no longer needed; may help to document the discussion; archive it at the end of the file
+- All options with their possible benefits and consequences, including the option of "doing nothing".
+- Documents the discussion around making the decision. 
+- Archive it at the end of the file after a decision has been made.
 
 ## Policy as Code
 
