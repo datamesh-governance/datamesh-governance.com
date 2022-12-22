@@ -12,7 +12,8 @@ public class Validator {
             "Databricks",
             "Azure Synapse Analytics",
             "BigQuery",
-            "Generic Data Lake"
+            "Generic Data Lake",
+            "Snowflake"
     );
 
     public static void main(String[] args) throws IOException {
@@ -37,6 +38,7 @@ public class Validator {
 
                 validatePolicy(errors, policyPath, category, List.of());
             }
+            validatePolicy(errors, categoryPath, null, List.of());
         }
     }
 
@@ -61,8 +63,10 @@ public class Validator {
 
         var lines = Files.readAllLines(policyFile, StandardCharsets.UTF_8).stream().map(String::trim).toList();
 
-        var categoryTitleCase = snakeCaseToTitleCase(category);
-        assertLine(errors, policyFile, lines, "Category: " + categoryTitleCase);
+        if (category != null) {
+            var categoryTitleCase = snakeCaseToTitleCase(category);
+            assertLine(errors, policyFile, lines, "Category: " + categoryTitleCase);
+        }
         assertNotStartsWith(errors, policyFile, lines, "Status: ");
         assertNotStartsWith(errors, policyFile, lines, "## Options");
         assertLine(errors, policyFile, lines, "## Context");

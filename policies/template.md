@@ -1,7 +1,7 @@
 `# Title as a short noun phrase
 
 Category: Interoperability/Quality/...  
-Platform: AWS/BigQuery/Azure/Databricks/Snowflake/...
+Platform: AWS, BigQuery, Azure Synapse Analytics, Databricks, Snowflake
 
 ## Context
 
