@@ -2,7 +2,6 @@
 
 Category: Discoverability  
 Platform: Databricks  
-Status: Proposed
 
 ## Context
 
@@ -56,21 +55,20 @@ Each data product must have these tags sets:
 - Table properties can be assigned during table creation, and altered later.
 - No external data catalog needed.
 
-## Example
+## Automation
+
+- Something similar to Google's Data Product Template: https://cloud.google.com/architecture/describe-organize-data-products-resources-data-mesh#the_data_product_template
+
 ```
-CREATE TABLE INVENTORY_HISTORY(sku string, quantity int, updated TIMESTAMP) 
+CREATE TABLE INVENTORY_HISTORY(sku string, quantity int, updated TIMESTAMP)
 LOCATION 'abfss://container@storageaccount.dfs.core.windows.net/fulfillment/inventory_history';
 TBLPROPERTIES(
-  'data_product_name' = 'inventory_history', 
-  'data_product_domain' = 'fulfillment', 
-  'data_product_team' = 'FUFI'
+'data_product_name' = 'inventory_history',
+'data_product_domain' = 'fulfillment',
+'data_product_team' = 'FUFI'
 )
 ;
 ```
-
-## Policy as Code
-
-- Something similar to Google's Data Product Template: https://cloud.google.com/architecture/describe-organize-data-products-resources-data-mesh#the_data_product_template
 
 ## Monitoring
 

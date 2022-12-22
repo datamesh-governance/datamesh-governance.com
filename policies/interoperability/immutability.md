@@ -1,9 +1,8 @@
 # Data Products are Immutable
 
-Category: Interoperability/Quality/...  
+Category: Interoperability
 [Platform: Databricks/Snowflake/BigQuery/...]  
-Status: Accepted/Proposed/Rejected/Deprecated/Superseded  
-Tags: ...
+Tags: quality
 
 ## Context
 
@@ -21,9 +20,6 @@ Use the "we will ..." styles with active voice.
 
 - List of concrete consequences and effects.
 
-## Follow-Up Questions
-
-
 ## Considered Alternatives
 
 - Before decision: After the context, start with writing up the options with their possible benefits and consequences in here.
@@ -35,6 +31,6 @@ Use the "we will ..." styles with active voice.
 - Is there a template from the enabling team?
 - Is there a platform service provided by the platform team?
 
-## Verification / Adherence / Monitoring
+## Monitoring
 
 - Run a defined query with a fixed processing timestamp (see [bitemporal](bitemporal.md)) on a data product twice, same result count expected.

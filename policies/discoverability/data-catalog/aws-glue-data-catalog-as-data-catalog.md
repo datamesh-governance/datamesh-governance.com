@@ -1,7 +1,7 @@
 # AWS Glue Data Catalog as Data Catalog for Data Products
 
+Category: Discoverability
 Platform: AWS  
-Status: Proposed
 
 ## Context
 
@@ -36,3 +36,6 @@ We use AWS Glue Data Catalog as Data Catalog for Data Products
 ## Automation
 
 - not required, a Glue Data Catalog catalog is created by default with an AWS account
+
+## Monitoring
+

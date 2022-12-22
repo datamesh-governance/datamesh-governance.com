@@ -2,7 +2,6 @@
 
 Category: Quality  
 Platform: BigQuery  
-Status: Proposed  
 
 ## Context
 

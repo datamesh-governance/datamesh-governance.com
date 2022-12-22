@@ -2,7 +2,6 @@
 
 Category: Security  
 Platform: Databricks/...  
-Status: Proposed  
 Tags: encryption  
 
 ## Context
@@ -22,9 +21,6 @@ We use Microsoft-managed encryption keys (MMK).
 - Read and write performance may be decreased
 - Encryption and decryption is transparently handled by platform, no negative effects on developer experience
 
-## Follow-Up Questions
-
-
 ## Considered Alternatives
 
 - Customer-managed keys (CMK) for Azure storage accounts
@@ -35,7 +31,7 @@ We use Microsoft-managed encryption keys (MMK).
 
 - Data platform guarantees encryption at rest 
 
-## Verification / Adherence / Monitoring
+## Monitoring
 
 - Not required, encryption-at-rest is enabled in all Storage Accounts
 

@@ -41,7 +41,7 @@ Entries are separated with a new line ([ndson](http://ndjson.org)).
 
 TBD
 
-##  Monitoring
+## Monitoring
 
 - Query all data products periodically and try to deserialize latest file
 - Query all data products periodically and check suffix

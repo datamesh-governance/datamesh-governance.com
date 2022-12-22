@@ -2,7 +2,6 @@
 
 Category: Interoperability  
 [Platform: AWS/BigQuery/Azure/Databricks/Snowflake/...]  
-Status: Proposed
 
 ## Context
 
@@ -28,12 +27,7 @@ Use the "we will ..." styles with active voice.
 - Costs
 - Follow-Up Questions
 
-## Considered Alternatives
-
-- Before decision: After the context, start with writing up the options with their possible benefits and consequences in here.
-- After decision: no longer needed; may help to document the discussion; archive it at the end of the file
-
-## Policy as Code
+## Automation
 
 - How to implement this policy as code?
 - Can the enabling team provide a template or best practices?

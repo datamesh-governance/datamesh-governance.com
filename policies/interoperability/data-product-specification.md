@@ -25,3 +25,6 @@ We will reevaluate in one year if a standard has emerged that provides significa
 - [Agile Lab Data Product Specification](https://github.com/agile-lab-dev/Data-Product-Specification)
 - [Data Product Descriptor Specification](https://dpds.opendatamesh.org/resources/specifications/1.0.0-DRAFT/)
 
+## Automation
+
+## Monitoring
