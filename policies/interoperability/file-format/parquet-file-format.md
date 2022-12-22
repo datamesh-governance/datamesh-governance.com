@@ -2,11 +2,10 @@
 
 Category: Interoperability  
 Platform: Databricks, Azure Synapse Analytics, Generic Data Lake  
-Status: Proposed
 
 ## Context
 
-Data products are stored as files on Azure Data Lake Storage Gen2 ([Data Product Storage](../../architecture-decisions/data-platform/azure-adls-as-storage-for-data-products.md)).
+Data products are stored as files on Azure Data Lake Storage Gen2 ([Data Product Storage](../../../architecture-decisions/data-platform/azure-adls-as-storage-for-data-products.md)).
 
 To ensure interoperability and consistent usage patterns, we want to agree on a common file format.
 
@@ -26,18 +25,16 @@ We use Apache Parquet for data products.
 - column-oriented -> efficient JOIN operations
 - (limited) meta data included
 - machine-readable
-
-## Follow-Up Questions
-
-- Partitioning
-- How to document the schema?
-- Timestamp format
-- How to model mutable data (like master and reference data)?
+- Follow-Up Questions
+  - Partitioning
+  - How to document the schema?
+  - Timestamp format
+  - How to model mutable data (like master and reference data)?
 
 ## Considered Alternatives
 
-- JSON
-- Delta
+- [JSON](json-file-format.md)
+- [Delta](delta-file-format.md)
 - Multi-format
 
 ## Automation
@@ -45,7 +42,7 @@ We use Apache Parquet for data products.
 - All major data platforms come with Parquet support out of the box
 - Tutorials provided by enabling team
 
-## Verification / Adherence / Monitoring
+## Monitoring
 
 - Query all data products periodically and try to deserialize latest file
 - Query all data products periodically and check suffix

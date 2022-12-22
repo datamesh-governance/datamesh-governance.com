@@ -2,11 +2,10 @@
 
 Category: Interoperability  
 Platform: Databricks, Azure Synapse Analytics, Generic Data Lake  
-Status: Proposed
 
 ## Context
 
-Data products are stored as files on Azure Data Lake Storage Gen2 ([Data Product Storage](../../architecture-decisions/data-platform/azure-adls-as-storage-for-data-products.md)).
+Data products are stored as files on Azure Data Lake Storage Gen2 ([Data Product Storage](../../../architecture-decisions/data-platform/azure-adls-as-storage-for-data-products.md)).
 
 To ensure interoperability and consistent usage patterns, we want to agree on a common file format.
 
@@ -26,27 +25,24 @@ Entries are separated with a new line ([ndson](http://ndjson.org)).
 - Widespread across many tools (such as Kafka Connectors), which makes data ingestion simple
 - Expensive IO and retrieval costs when querying data sets, as it is not compressed
 - Full reads make JOIN operations slow and expensive, compared to column-oriented file formats
+- Follow-Up Questions
+  - Partitioning
+  - How to document the schema?
+  - Timestamp format
 
-## Follow-Up Questions
-
-- Partitioning
-- How to document the schema?
-- Timestamp format
 
 ## Considered Alternatives
 
-- CSV
-- Parquet
-- Delta
+- [Parquet](parquet-file-format.md)
+- [Delta](delta-file-format.md)
 - Multi-format
 
 ## Automation
 
 TBD
 
-## Verification / Adherence / Monitoring
+##  Monitoring
 
-- Query all data products ([GOV-12](datacatalog.md)) periodically and try to deserialize latest file
-- Query all data products ([GOV-12](datacatalog.md)) periodically and check suffix
+- Query all data products periodically and try to deserialize latest file
+- Query all data products periodically and check suffix
 - Webhook after each data product publishing with tag `serialization:json`
-- 

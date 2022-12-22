@@ -55,9 +55,11 @@ _Note that some examples are only applicable in certain contexts or with specifi
 ### Interoperability
 - [Data Product Specification](policies/interoperability/data-product-specification.md)
 - Address scheme
-- [Parquet File Format](policies/interoperability/parquet-file-format.md)
-- [Delta File Format](policies/interoperability/delta-file-format.md)
-- [JSON File Format](policies/interoperability/json-file-format.md)
+- File Format
+  - [Parquet File Format](policies/interoperability/file-format/parquet-file-format.md)
+  - [Delta File Format](policies/interoperability/file-format/delta-file-format.md)
+  - [JSON File Format](policies/interoperability/file-format/json-file-format.md)
+  - Multi-format
 - Table Naming Conventions
 - Column Naming Conventions
 - File Name Conventions

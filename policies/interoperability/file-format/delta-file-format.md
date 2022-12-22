@@ -2,11 +2,10 @@
 
 Category: Interoperability  
 Platform: Databricks, Azure Synapse Analytics, Generic Data Lake  
-Status: Proposed
 
 ## Context
 
-Data products are stored as files on S3 ([AWS S3 as Storage for Data Products](../../architecture-decisions/data-platform/aws-s3-as-storage-for-data-products.md)).
+Data products are stored as files on S3 ([AWS S3 as Storage for Data Products](../../../architecture-decisions/data-platform/aws-s3-as-storage-for-data-products.md)).
 
 To ensure interoperability and consistent usage patterns, we want to agree on a common file format.
 
@@ -26,18 +25,16 @@ We use Delta as file format for data products.
 - supports update and delete operations -> Do we want to use this feature for data products?
 - Files may be fragmented after updates
 - Time travel is possible
-
-## Follow-Up Questions
-
-- Partitioning
-- How to document the schema?
-- Timestamp format
-- How to model mutable data (like master and reference data)?
+- Follow-Up Questions
+  - Partitioning
+  - How to document the schema?
+  - Timestamp format
+  - How to model mutable data (like master and reference data)?
 
 ## Considered Alternatives
 
-- JSON
-- Parquet
+- [JSON](json-file-format.md)
+- [Parquet](parquet-file-format.md)
 - Multi-format
 
 ## Automation
@@ -45,7 +42,7 @@ We use Delta as file format for data products.
 - Databricks comes with Delta support out of the box
 - Tutorials provided by enabling team
 
-## Verification / Adherence / Monitoring
+## Monitoring
 
 - Query all data products periodically and try to deserialize latest file
 - Query all data products periodically and check suffix
