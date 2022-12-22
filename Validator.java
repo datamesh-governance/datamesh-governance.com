@@ -7,53 +7,61 @@ import java.util.stream.Collectors;
 
 public class Validator {
 
+    public static final Set<String> ALLOWED_PLATFORMS = Set.of(
+            "AWS",
+            "Databricks",
+            "Azure Synapse Analytics",
+            "BigQuery",
+            "Generic Data Lake"
+    );
+
     public static void main(String[] args) throws IOException {
         List<Error> errors = new LinkedList<>();
 
-        validate(errors, "policies");
-        validate(errors, "architecture-decisions");
+        validate(errors, Path.of("policies"));
+        validate(errors, Path.of("architecture-decisions"));
 
-        errors.stream().forEach(System.out::println);
+        errors.forEach(System.out::println);
 
     }
 
-    private static void validate(List<Error> errors, String folder) throws IOException {
-        try (var groups = Files.newDirectoryStream(Path.of(folder))) {
-            for (Path path : groups) {
+    private static void validate(List<Error> errors, Path folder) throws IOException {
+        for (var categoryPath : getPathsInFolder(folder)) {
+            for (var policyPath : getPathsInFolder(categoryPath)) {
+                var category = policyPath.getParent().getFileName().toString().replace(".md", "");
 
-
-                if (Files.isDirectory(path)) {
-                    try (var policyFiles = Files.newDirectoryStream(path)) {
-                        for (var policyFile : policyFiles) {
-                            String category = policyFile.getParent().getFileName().toString().replace(".md", "");
-
-                            if (Files.isDirectory(policyFile)) {
-                                List<Path> policyOptions = new LinkedList<>();
-                                try (var policyOptionsStream = Files.newDirectoryStream(policyFile, "*.md")) {
-                                    for (var policyOption : policyOptionsStream) {
-                                        policyOptions.add(policyOption);
-                                    }
-                                }
-
-                                for (var policyOption : policyOptions) {
-                                    validatePolicy(errors, policyOption, category, policyOptions);
-                                }
-                            }
-
-                            if (Files.isRegularFile(policyFile) && policyFile.toString().endsWith(".md")) {
-                                validatePolicy(errors, policyFile, category, List.of());
-                            }
-                        }
-                    }
+                var policyOptionPaths = getPathsInFolder(policyPath);
+                for (var policyOptionPath : policyOptionPaths) {
+                    validatePolicy(errors, policyOptionPath, category, policyOptionPaths);
                 }
+
+                validatePolicy(errors, policyPath, category, List.of());
             }
         }
     }
 
+    private static List<Path> getPathsInFolder(Path folder) throws IOException {
+        if (!Files.isDirectory(folder)) {
+            return List.of();
+        }
+
+        List<Path> paths = new LinkedList<>();
+        try (var pathDirectoryStream = Files.newDirectoryStream(folder)) {
+            for (var path : pathDirectoryStream) {
+                paths.add(path);
+            }
+        }
+        return paths;
+    }
+
     private static void validatePolicy(List<Error> errors, Path policyFile, String category, List<Path> policyOptions) throws IOException {
+        if (!Files.isRegularFile(policyFile) || !policyFile.getFileName().toString().endsWith(".md")) {
+            return;
+        }
+
         var lines = Files.readAllLines(policyFile, StandardCharsets.UTF_8).stream().map(String::trim).toList();
 
-        String categoryTitleCase = snakeCaseToTitleCase(category);
+        var categoryTitleCase = snakeCaseToTitleCase(category);
         assertLine(errors, policyFile, lines, "Category: " + categoryTitleCase);
         assertNotStartsWith(errors, policyFile, lines, "Status: ");
         assertNotStartsWith(errors, policyFile, lines, "## Options");
@@ -64,7 +72,7 @@ public class Validator {
         assertLine(errors, policyFile, lines, "## Monitoring");
         assertPlatformInList(errors, policyFile, lines);
 
-        for(var otherPolicyOption : policyOptions) {
+        for (var otherPolicyOption : policyOptions) {
             if (otherPolicyOption.equals(policyFile)) {
                 continue;
             }
@@ -86,12 +94,11 @@ public class Validator {
 
         var platform = optional.get().substring("Platform: ".length());
         var platforms = Arrays.stream(platform.split(",")).map(String::trim).collect(Collectors.toSet());
-        var allowedPlatforms = Set.of("AWS", "Databricks", "Azure Synapse Analytics", "BigQuery", "Generic Data Lake");
-        platforms.removeAll(allowedPlatforms);
+        platforms.removeAll(ALLOWED_PLATFORMS);
 
-        if(!platforms.isEmpty()) {
+        if (!platforms.isEmpty()) {
             for (var p : platforms) {
-              errors.add(new Error(policyFile, "Platform unknown '" + p + "'"));
+                errors.add(new Error(policyFile, "Platform unknown '" + p + "'"));
             }
         }
     }
@@ -103,18 +110,19 @@ public class Validator {
     }
 
     private static void assertNotStartsWith(List<Error> errors, Path policyFile, List<String> lines, String containsCheck) {
-        var errorLines = lines.stream().filter( line-> line.startsWith(containsCheck)).toList();
-        if(!errorLines.isEmpty()) {
-                    errors.add(new Error(policyFile, "Contains '" + containsCheck + "'"));
+        var errorLines = lines.stream().filter(line -> line.startsWith(containsCheck)).toList();
+        if (!errorLines.isEmpty()) {
+            errors.add(new Error(policyFile, "Contains '" + containsCheck + "'"));
         }
     }
 
     private static void assertContains(List<Error> errors, Path policyFile, List<String> lines, String containsCheck) {
-        var errorLines = lines.stream().filter( line-> line.contains(containsCheck)).toList();
-        if(errorLines.isEmpty()) {
+        var errorLines = lines.stream().filter(line -> line.contains(containsCheck)).toList();
+        if (errorLines.isEmpty()) {
             errors.add(new Error(policyFile, "Missing '" + containsCheck + "'"));
         }
     }
 
-    record Error(Path file, String error) {}
+    record Error(Path file, String error) {
+    }
 }
