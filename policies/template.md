@@ -1,8 +1,7 @@
-# Title as a short noun phrase
+`# Title as a short noun phrase
 
 Category: Interoperability/Quality/...  
 [Platform: AWS/BigQuery/Azure/Databricks/Snowflake/...]  
-Status: Proposed/Accepted/Rejected/Deprecated/Superseded  
 
 ## Context
 
@@ -24,13 +23,7 @@ Use the "we will ..." style with active voice.
 - Costs
 - Follow-Up Questions
 
-## Considered Alternatives
-
-- All options with their possible benefits and consequences, including the option of "doing nothing".
-- Documents the discussion around making the decision. 
-- Archive it at the end of the file after a decision has been made.
-
-## Policy as Code
+## Automation
 
 - How to implement this policy as code?
 - Can the enabling team provide a template or best practices?
