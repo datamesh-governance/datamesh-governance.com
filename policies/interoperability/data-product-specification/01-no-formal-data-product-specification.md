@@ -20,4 +20,8 @@ We will reevaluate in one year if a standard has emerged that provides significa
 
 ## Automation
 
+not applicable
+
 ## Monitoring
+
+not applicable

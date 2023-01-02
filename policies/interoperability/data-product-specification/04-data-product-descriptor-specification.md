@@ -15,10 +15,16 @@ We specify data products with Data Product Descriptor Specification.
 - Data product owners need to create and curate a [Data Product Descriptor Specification](https://dpds.opendatamesh.org/resources/specifications/1.0.0-DRAFT/) JSON or YAML file ([Example](https://github.com/opendatamesh-initiative/odm-specification-dpdescriptor/blob/main/examples/tripexecution/data-product-descriptor.dpd.json)).
 - A data product specification can help to define the characteristics, behavior, requirements, and usage of data products in a data mesh.
 - The Data Product Descriptor Specification is similar to OpenAPI and AsyncAPI specifications, that are familiar with our backend engineers.
-- Currently there is no tooling support available in our data platform nor data catalog.
+- Currently, there is no tooling support available in our data platform nor data catalog.
 - Licensed under Apache License 2.0
 - We accept to be early adaptor. We are not aware of any other company using this specification.
 
 ## Automation
 
+The specification file needs to be curated manually by the domain team when developing and maintaining a data product.
+
+It may be a foundation for further automation through the data platform.
+
 ## Monitoring
+
+The validity of the syntax can be checked through a provided [JSON schema](https://dpds.opendatamesh.org/resources/schemas/1.0.0-DRAFT.json).

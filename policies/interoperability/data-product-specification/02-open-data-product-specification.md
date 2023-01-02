@@ -19,6 +19,11 @@ We specify data products with the Open Data Product Specification.
 - Currently, there is no tooling support available in our data platform nor data catalog.
 - Licensed under [https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/)
 - We accept to be early adaptor. We are not aware of any other company using this specification.
+
 ## Automation
+
+The JSON file needs to be curated manually by the domain team when developing and maintaining a data product.
+
+It may be a foundation for further automation through the data platform.
 
 ## Monitoring
