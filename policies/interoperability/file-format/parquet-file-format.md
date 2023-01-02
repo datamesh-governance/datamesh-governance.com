@@ -31,12 +31,6 @@ We use Apache Parquet for data products.
   - Timestamp format
   - How to model mutable data (like master and reference data)?
 
-## Considered Alternatives
-
-- [JSON](json-file-format.md)
-- [Delta](delta-file-format.md)
-- Multi-format
-
 ## Automation
 
 - All major data platforms come with Parquet support out of the box

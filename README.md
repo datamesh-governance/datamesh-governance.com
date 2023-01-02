@@ -63,7 +63,6 @@ _Note that some examples are only applicable in certain contexts or with specifi
   - [Parquet File Format](policies/interoperability/file-format/parquet-file-format.md)
   - [Delta File Format](policies/interoperability/file-format/delta-file-format.md)
   - [JSON File Format](policies/interoperability/file-format/json-file-format.md)
-  - Multi-format
 - Table Naming Conventions
 - Column Naming Conventions
 - File Name Conventions

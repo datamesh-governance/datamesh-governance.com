@@ -30,13 +30,6 @@ Entries are separated with a new line ([ndson](http://ndjson.org)).
   - How to document the schema?
   - Timestamp format
 
-
-## Considered Alternatives
-
-- [Parquet](parquet-file-format.md)
-- [Delta](delta-file-format.md)
-- Multi-format
-
 ## Automation
 
 TBD

@@ -31,12 +31,6 @@ We use Delta as file format for data products.
   - Timestamp format
   - How to model mutable data (like master and reference data)?
 
-## Considered Alternatives
-
-- [JSON](json-file-format.md)
-- [Parquet](parquet-file-format.md)
-- Multi-format
-
 ## Automation
 
 - Databricks comes with Delta support out of the box
