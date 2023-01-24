@@ -7,7 +7,7 @@ Category: Privacy
 Managing and securing personal data, Personally Identifiable Information (PII), and business secrets is critical and subject to multiple legal and compliance requirements.
 Violations or leaks can result in serious penalties or harm for the business.
 
-A first step is to define a classification for data types and their sensitivity.
+A first step is to define data classes and their sensitivity.
 
 ## Decision
 
@@ -53,14 +53,14 @@ We define data classes around sensitivity levels:
 [//]: # (Data that is purposefully made available to the public)
 
 
-| Classification | Data Classes                                      | Access Control                                        |
-|----------------|---------------------------------------------------|-------------------------------------------------------|
-| sensitive      | PII, Personal Data, Public Health Information     | No access for analytical use                          |
-| restricted     | Financial data, contracts, customer communication | Access upon request for specific analytical use cases |
-| internal       | Business transactions, master data                | Access for everyone in the organization               |
-| public         | Public available data, external                   | Access for everyone in the organization               |
+| Classification | Data Classes                                      | Access Control                                                                                                                                                                        |
+|----------------|---------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| sensitive      | PII, Personal Data, Public Health Information     | No access for analytical use.<br/>May be made available as _restricted_ or _internal_ after applying de-identification methods such as aggregation, masking, or differential privacy. |
+| restricted     | Financial data, contracts, customer communication | Access upon request for specific analytical use cases                                                                                                                                 |
+| internal       | Business transactions, master data                | Access for everyone in the organization                                                                                                                                               |
+| public         | Public available data, external                   | Access for everyone in the organization                                                                                                                                               |
 
-By default, we consider all data as _sensitive_, unless specified otherwise.
+By default, we consider all unclassified data to be _sensitive_.
 
 
 
