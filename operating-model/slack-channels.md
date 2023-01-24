@@ -9,19 +9,21 @@ The federated governance group needs to communicate with the rest of the organis
 We use the following three communication Slack channels for the communication between our federated governance group and the rest of the organisation. 
 
 ### `#datamesh-governance`
-- The team API for the federated governance group
+
+The team API for the federated governance group.
+
 - In this channel, anybody can ask questions, bring topics or concerns.
 - In this channel, the group announces news and important decisions. 
 - In this channel, facilitators announce upcoming meeting dates with agenda for interested stakeholders to join.
 - Members: All users of the data mesh platform
 
 ### `#datamesh-governance-internal`
-- In this channel, the members of the Federated Governance Group discuss, communicate, and work together
+- In this channel, the members of the Federated Governance Group discuss, communicate, and work together.
 - Members: Federated Governance Group
 
 ### `#datamesh-governance-updates`
-- In this channel, a bot posts updates on new or changed global policies and their adoption status automatically
-- Use comments in threads to discuss changes
+- In this channel, updates on new or changed global policies and their adoption status are published.
+- Use comments in threads to discuss changes.
 - Members: Domain Teams
 
 ## Consequences
@@ -29,4 +31,4 @@ We use the following three communication Slack channels for the communication be
 - Uncluttered
 
 ## Automation
-- Integration with Confluence to post updates on page changes to `#datamesh-governance-updates`
+- Integration with Confluence to post updates on page changes to `#datamesh-governance-updates` automatically
