@@ -138,9 +138,9 @@ _Note that some examples are only applicable in certain contexts or with specifi
 
 ### Privacy & Compliance
 
+- [Data Classification](policies/privacy/data-classification/data-classification.md)
 - PII data separation
 - PII Anonymization
-- Data Classification Scheme (restricted, sensitive, unrestricted)
 - Data Stored in Customer's Business Region
 - PHI (protected health info)
 - Data Retention Periods
