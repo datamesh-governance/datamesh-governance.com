@@ -33,6 +33,7 @@ The team API for the federated governance group.
 - Audience: Domain Teams
 
 ## Consequences
+- Governance Group online meetings can simply be started in the `Governance (internal)` channel.
 - Simple communication
 - Uncluttered
 
