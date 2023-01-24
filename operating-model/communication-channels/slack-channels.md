@@ -15,16 +15,16 @@ The team API for the federated governance group.
 - In this channel, anybody can ask questions, bring topics or concerns.
 - In this channel, the group announces news and important decisions. 
 - In this channel, facilitators announce upcoming meeting dates with agenda for interested stakeholders to join.
-- Members: All users of the data mesh platform
+- Audience: All users of the data mesh platform
 
 ### `#datamesh-governance-internal`
 - In this channel, the members of the Federated Governance Group discuss, communicate, and work together.
-- Members: Federated Governance Group
+- Audience: Federated Governance Group
 
 ### `#datamesh-governance-updates`
 - In this channel, updates on new or changed global policies and their adoption status are published.
 - Use comments in threads to discuss changes.
-- Members: Domain Teams
+- Audience: Domain Teams
 
 ## Consequences
 - Simple communication
