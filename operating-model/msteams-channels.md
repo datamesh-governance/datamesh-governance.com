@@ -4,11 +4,13 @@
 
 The federated governance group needs to communicate with the rest of the organisation, and vice versa.
 
+We primarily use MS Teams, and every domain team has their own *team* in MS Teams.
+
 ## Decision
 
-We use the following three Slack channels for the communication between our federated governance group and the rest of the organisation. 
+We use a *Data Mesh* team in MS Teams to collaborate across the organisation. In this team, we use the following three MS Teams channels:
 
-### `#datamesh-governance`
+### `Governance`
 
 The team API for the federated governance group.
 
@@ -17,11 +19,11 @@ The team API for the federated governance group.
 - In this channel, facilitators announce upcoming meeting dates with agenda for interested stakeholders to join.
 - Members: All users of the data mesh platform
 
-### `#datamesh-governance-internal`
+### `Governance (internal)`
 - In this channel, the members of the Federated Governance Group discuss, communicate, and work together.
 - Members: Federated Governance Group
 
-### `#datamesh-governance-updates`
+### `Governance Updates`
 - In this channel, updates on new or changed global policies and their adoption status are published.
 - Use comments in threads to discuss changes.
 - Members: Domain Teams
@@ -31,4 +33,4 @@ The team API for the federated governance group.
 - Uncluttered
 
 ## Automation
-- Integration with Confluence to post updates on page changes to `#datamesh-governance-updates` automatically
+- Integration with Confluence to post updates on page changes to `Governance Updates` automatically
