@@ -10,7 +10,7 @@ We primarily use Microsoft Teams, and every domain team has their own *team* in 
 
 We use a *Data Mesh* team in Microsoft Teams to collaborate across the organisation. 
 
-In this team, we use the following three Microsoft Teams channels:
+In this team, we use the following three Microsoft Teams channels for the Governance Group:
 
 ![Microsoft Teams Screenshot](https://www.datamesh-governance.com/images/operating-model-microsoft-teams-channels.png)
 
