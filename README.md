@@ -26,6 +26,29 @@ The following proposed guiding values are based on the guiding values, described
 - Enforce consistent security 
 - Design for automation 
 
+## Operating Model
+
+The operating model defines the structure and processes of the  data mesh governance group.
+After forming the group with its members, in the first meeting the collaboration mode, communication channels and a policy repository needs to be decided on.
+
+### Members
+- Members of the Governance Group
+
+### Collaboration Mode
+- Asynchronous collaboration (no meetings)
+- Bi-weekly online meetings
+
+### Communication Channels
+- [Microsoft Teams Channels](operating-model/communication-channels/microsoft-teams-channels.md)
+- [Slack Channels](operating-model/communication-channels/slack-channels.md)
+- Email Lists
+
+### Policy Repository
+- Confluence
+- Git
+
+[//]: # (Decision Process, Policy Template, Adoption Tracking Process, Data Platform Requirements and Tracking)
+
 ## Architecture Decisions
 
 While it is not the federated governance group's actual job to define the architecture of the data platform, 
@@ -114,9 +137,11 @@ _Note that some examples are only applicable in certain contexts or with specifi
 - Consents Provided by Checkout Domain
 
 ### Privacy & Compliance
+
+- PII data separation
+- PII Anonymization
 - Data Classification Scheme (restricted, sensitive, unrestricted)
 - Data Stored in Customer's Business Region
-- PII Anonymization
 - PHI (protected health info)
 - Data Retention Periods
 - Right to be Forgotten By Tombstone Events
