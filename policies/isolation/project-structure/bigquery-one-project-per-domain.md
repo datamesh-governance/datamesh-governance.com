@@ -1,4 +1,4 @@
-# BigQuery Project Structure and Naming Conventions (one project per domain)
+# BigQuery Project Structure (one project per domain)
 
 Category: Interoperability  
 Platform: BigQuery
@@ -17,7 +17,7 @@ BigQuery has a strict hierarchy:
 
 ## Decision
 
-We agree on a set of naming conventions for our BigQuery projects, datasets and tables:
+We agree on a set conventions for our BigQuery projects, datasets and tables:
 
 ### Project ID
 

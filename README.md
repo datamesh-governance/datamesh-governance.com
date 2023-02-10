@@ -93,17 +93,17 @@ _Note that some examples are only applicable in certain contexts or with specifi
 - Common IDs
 - Well-known Fields Names
 - Bitemporal Timestamp Fields
-
+- Naming Conventions (environment, database, table, column, file, bucket, ...)
 
 ### Isolation
 - Central account for the data catalog and governance
 - [Separate Account per Domain Team](policies/isolation/separate-account-per-domain-team.md)
 - Separate Database per Domain Team
 - Separate Schema per Domain Team
-- Project structure and naming conventions
-  - [BigQuery Project Structure and Naming Conventions (one project per data product)](policies/isolation/project-structure/bigquery-one-project-per-dataproduct.md)
-  - [BigQuery Project Structure and Naming Conventions (one dataset per data product)](policies/isolation/project-structure/bigquery-one-dataset-per-dataproduct.md)
-  - [BigQuery Project Structure and Naming Conventions (one project per domain)](policies/isolation/project-structure/bigquery-one-project-per-domain.md)
+- Project structure
+  - [BigQuery Project Structure (one project per data product)](policies/isolation/project-structure/bigquery-one-project-per-dataproduct.md)
+  - [BigQuery Project Structure (one dataset per data product)](policies/isolation/project-structure/bigquery-one-dataset-per-dataproduct.md)
+  - [BigQuery Project Structure (one project per domain)](policies/isolation/project-structure/bigquery-one-project-per-domain.md)
   - AWS
   - Snowflake
 
