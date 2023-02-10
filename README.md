@@ -86,24 +86,22 @@ _Note that some examples are only applicable in certain contexts or with specifi
   - [Parquet File Format](policies/interoperability/file-format/parquet-file-format.md)
   - [Delta File Format](policies/interoperability/file-format/delta-file-format.md)
   - [JSON File Format](policies/interoperability/file-format/json-file-format.md)
-- Table Naming Conventions
-- Column Naming Conventions
-- File Name Conventions
 - Partitioning Keys
 - Timestamp as ISO-8601 Strings
 - Money amounts in cents as integers
 - Common IDs
-- Common Fields Names
+- Well-known Fields Names
 - Bitemporal Timestamp Fields
+- Naming Conventions (environment, database, table, column, file, bucket, ...)
+  - BigQuery
+  - AWS
+  - Snowflake
 
 ### Isolation
+- Central account for the data catalog and governance
 - [Separate Account per Domain Team](policies/isolation/separate-account-per-domain-team.md)
 - Separate Database per Domain Team
 - Separate Schema per Domain Team
-- Bucket Structure
-  - One bucket for organization
-  - Bucket per team
-  - Bucket per data product
 
 ### Discoverability
 - Data Catalog
@@ -123,12 +121,17 @@ _Note that some examples are only applicable in certain contexts or with specifi
 - Minimum level quality of a data product
 
 ### Documentation
-- Documentation in Wiki
-- Documentation in Data Catalog
+- Documentation of data products
+  - Wiki
+  - Data Catalog
 - Mandatory Fields for Data Products
 - Schema Format
 
 ### Access Control
+- Access Request
+  - Ticket with manual steps
+  - Decentralized self-service via Pull Requests
+  - Central self-service app with decentralized handlers
 - Access granted through AWS IAM Policies
 - ACLs managed by Domain Teams
 - Reassess after x month
@@ -154,6 +157,11 @@ _Note that some examples are only applicable in certain contexts or with specifi
 ### Monitoring
 - Observability Metrics
 - Cost reporting
+ 
+### Self-service
+- Data Product Creation
+  - Self-service app (Backstage.io)
+  - Tutorials/guides
 
 ### Ownership (TBD)
 - Ownership for New Data Products
