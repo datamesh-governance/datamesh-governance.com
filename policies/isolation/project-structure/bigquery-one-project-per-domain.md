@@ -7,14 +7,6 @@ Platform: BigQuery
 
 For consistency, we want a uniform structure and naming of our BigQuery projects.
 
-BigQuery has a strict hierarchy:
-
-- GCP Account
-  - Project
-    - Dataset
-      - Tables
-      - Views
-
 ## Decision
 
 We agree on a set conventions for our BigQuery projects, datasets and tables:
