@@ -9,7 +9,7 @@ For consistency, we want a uniform structure and naming of our BigQuery projects
 
 ## Decision
 
-We agree on a set conventions for our BigQuery projects, datasets, and tables:
+We agree on a set of conventions for our BigQuery projects, datasets, and tables:
 
 ### Project ID
 
