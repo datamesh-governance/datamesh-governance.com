@@ -17,14 +17,15 @@ However, it is always up to the domain teams to adhere to the policies.
 
 ## Guiding Values
 
-The following proposed guiding values are based on the guiding values, described by Zhamak Dehghani in her book in chapter 5.
+Guiding values are the fundamental beliefs we agree on when implementing data mesh governance. 
+They guide us to make the right choices and give justification for our decisions. 
 
-- Minimize global decisions
-- Optimize for generalist majority
+- Focus on usage
+- Optimize experience for generalist majority
 - Embrace bounded contexts
 - Standardize for interoperability
 - Enforce consistent security 
-- Design for automation 
+- Design for automation
 
 ## Operating Model
 
@@ -92,16 +93,20 @@ _Note that some examples are only applicable in certain contexts or with specifi
 - Common IDs
 - Well-known Fields Names
 - Bitemporal Timestamp Fields
-- Naming Conventions (environment, database, table, column, file, bucket, ...)
-  - BigQuery
-  - AWS
-  - Snowflake
+
 
 ### Isolation
 - Central account for the data catalog and governance
 - [Separate Account per Domain Team](policies/isolation/separate-account-per-domain-team.md)
 - Separate Database per Domain Team
 - Separate Schema per Domain Team
+- Project structure and naming conventions
+  - [BigQuery Project Structure and Naming Conventions (one project per data product)](policies/isolation/project-structure/bigquery-one-project-per-dataproduct.md)
+  - [BigQuery Project Structure and Naming Conventions (one dataset per data product)](policies/isolation/project-structure/bigquery-one-dataset-per-dataproduct.md)
+  - [BigQuery Project Structure and Naming Conventions (one project per domain)](policies/isolation/project-structure/bigquery-one-project-per-domain.md)
+  - AWS
+  - Snowflake
+
 
 ### Discoverability
 - Data Catalog
