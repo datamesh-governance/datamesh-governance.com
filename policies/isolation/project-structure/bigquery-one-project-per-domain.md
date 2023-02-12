@@ -1,4 +1,4 @@
-# BigQuery Project Structure (one project per domain)
+# One project per domain
 
 Category: Interoperability  
 Platform: BigQuery

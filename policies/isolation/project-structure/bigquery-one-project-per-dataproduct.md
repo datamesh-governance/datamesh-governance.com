@@ -1,4 +1,4 @@
-# BigQuery Project Structure (one project per data product)
+# One project per data product
 
 Category: Interoperability  
 Platform: BigQuery
