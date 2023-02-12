@@ -3,6 +3,8 @@
 Category: Interoperability  
 Platform: BigQuery
 
+[//]: # (order:2)
+
 ## Context
 
 For consistency, we want a uniform structure and naming of our BigQuery projects.
