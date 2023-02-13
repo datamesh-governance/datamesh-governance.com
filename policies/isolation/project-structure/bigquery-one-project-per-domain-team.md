@@ -1,4 +1,4 @@
-# One project per domain
+# One project per domain team
 
 Category: Interoperability  
 Platform: BigQuery

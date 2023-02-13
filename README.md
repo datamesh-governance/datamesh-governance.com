@@ -99,7 +99,7 @@ _Note that some examples are only applicable in certain contexts or with specifi
 - Project structure
   - [[BigQuery] One project per data product](policies/isolation/project-structure/bigquery-one-project-per-dataproduct.md)
   - [[BigQuery] One dataset per data product](policies/isolation/project-structure/bigquery-one-dataset-per-dataproduct.md)
-  - [[BigQuery] One project per domain](policies/isolation/project-structure/bigquery-one-project-per-domain.md)
+  - [[BigQuery] One project per domain team](policies/isolation/project-structure/bigquery-one-project-per-domain-team.md)
   - AWS
   - Snowflake
 - Central account for the data catalog and governance
