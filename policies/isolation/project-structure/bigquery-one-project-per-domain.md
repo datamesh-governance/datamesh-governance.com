@@ -9,16 +9,21 @@ Platform: BigQuery
 
 For consistency, we want a uniform structure and naming of our BigQuery projects.
 
+The structure must fit to BigQuery's strict 3-level-hierarchy:
+
+- project
+  - dataset
+    - tables
+    - views
+
+BigQuery has some naming restrictions:
+Project IDs must be 6-30 characters, contain letters, numbers, and hyphens and are globally unique, cannot be in use or have previously been used. Datasets and table names can contain up to 1024 characters, numbers and underscores.
+
 ## Decision
 
 We agree on a set of conventions for our BigQuery projects, datasets and tables:
 
 ### Project ID
-
-Requirements:
-- 6-30 characters
-- letters, numbers, and hyphens
-- Cannot be in use or previously used
 
 Format:
 

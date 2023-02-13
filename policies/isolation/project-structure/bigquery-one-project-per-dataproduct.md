@@ -9,40 +9,46 @@ Platform: BigQuery
 
 For consistency, we want a uniform structure and naming of our BigQuery projects.
 
+The structure must fit to BigQuery's strict 3-level-hierarchy:
+
+- project
+  - dataset
+    - tables
+    - views
+
+BigQuery has some naming restrictions: 
+Project IDs must be 6-30 characters, contain letters, numbers, and hyphens and are globally unique, cannot be in use or have previously been used. Datasets and table names can contain up to 1024 characters, numbers and underscores.
+
+
 ## Decision
 
 We agree on a set of conventions for our BigQuery projects, datasets, and tables:
 
 ### Project ID
 
-Requirements:
-- 6-30 characters
-- letters, numbers, and hyphens
-- Globally unique, cannot be in use or previously been used
-
 Format:
 
-`<orgname>[-<env>]-data-<domain>-<dataproduct>`
+`<orgname>[-<env>]-dp-<domain>-<dataproduct>`
 
 Elements:
 - **&lt;orgname&gt;** is the short name of our organization.
 - **&lt;env&gt;** represents the environment, such as _dev_ and _test_. Omitted for _prod_, to keep the default short.
-- **data** is the indication that this is a data mesh specific project.
+- **dp** is the indication that this is a data product.
 - **&lt;domain&gt;** is the short name of the domain team.
 - **&lt;dataproduct&gt;** is the short name of the data product.
 
 Examples:
-- `acme-data-search-queries`
-- `acme-data-search-top100byday`
-- `acme-data-search-clicksbycat`
-- `acme-data-articles-articles`
-- `acme-data-checkout-orders`
-- `acme-data-checkout-customers`
-- `acme-data-fufi-shipments`
-- `acme-data-fufi-inventory`
-- `acme-dev-data-search-queries`
-- `acme-test-data-search-queries`
-- `acme-test-data-search-top100byday` ⚠️ too long
+- `acme-dp-search-queries`
+- `acme-dp-search-top100byday`
+- `acme-dp-search-clicksbycat`
+- `acme-dp-articles-articles`
+- `acme-dp-checkout-orders`
+- `acme-dp-checkout-customers`
+- `acme-dp-fufi-shipments`
+- `acme-dp-fufi-inventory`
+- `acme-dev-dp-search-queries`
+- `acme-test-dp-search-queries`
+- `acme-test-dp-search-top100byday` ⚠️ too long
 
 
 ### Datasets
@@ -73,7 +79,7 @@ If applicable, more datasets can be defined by adding a suffix, separated by an 
 
 ### Example
 
-- `acme-data-search-queries`
+- `acme-dp-search-queries`
   - `source`
     - `src_googleanalytics__activity_search`
   - `staging`
@@ -83,19 +89,19 @@ If applicable, more datasets can be defined by adding a suffix, separated by an 
     - `search_result_clicked`
   - `manual`
     - `country_codes`
-- `acme-data-search-top100byday`
+- `acme-dp-search-top100byday`
   - `aggregations`
     - `searches__top100_queries_by_day`
-- `acme-data-search-clicksbycat`
-- `acme-data-articles-articles`
-- `acme-data-checkout-orders`
-- `acme-data-checkout-customers`
+- `acme-dp-search-clicksbycat`
+- `acme-dp-articles-articles`
+- `acme-dp-checkout-orders`
+- `acme-dp-checkout-customers`
   - `objects`
     - `customers`
   - `aggregations`
     - `customers_anonymized`
-- `acme-data-fufi-shipments`
-- `acme-data-fufi-inventory`
+- `acme-dp-fufi-shipments`
+- `acme-dp-fufi-inventory`
 
 
 
