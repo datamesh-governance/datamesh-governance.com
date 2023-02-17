@@ -50,31 +50,10 @@ After forming the group with its members, in the first meeting the collaboration
 
 [//]: # (Decision Process, Policy Template, Adoption Tracking Process, Data Platform Requirements and Tracking)
 
-## Architecture Decisions
-
-While it is not the federated governance group's actual job to define the architecture of the data platform, 
-architecture decisions have consequences for global policies and vice versa, e.g. for policy automation and monitoring.
-
-Architecture decisions and policies are both formulated as Architecture Decision Records (ADRs) using this [template](policies/template.md).
-
-_Note that some examples are only applicable in certain contexts or with specific data platforms._
-
-
-### Data Platform
-
-- [AWS S3 as Storage for Data Products](architecture-decisions/data-platform/aws-s3-as-storage-for-data-products.md)
-- [AWS Athena as Query-Engine](architecture-decisions/data-platform/aws-athena-as-query-engine.md)
-- AWS Redshift as Data Platform
-- GCP BigQuery as Data Platform
-- GCP Cloud Storage as Storage for Data Products
-- Azure Synapse Analytics as Data Platform
-- [Azure ADLS as Storage for Data Products](architecture-decisions/data-platform/azure-adls-as-storage-for-data-products.md)
-- Snowflake as Data Platform
-- [Databricks as Data Platform](architecture-decisions/data-platform/databricks-as-data-platform.md)
-- Presto as On-Premise Query-Engine
-- MinIO as On-Premise Storage for Data Products
 
 ## Policies
+
+[Policy Template](policies/template.md)
 
 ### Interoperability
 - Data Product Specification
@@ -168,13 +147,31 @@ _Note that some examples are only applicable in certain contexts or with specifi
   - Self-service app (Backstage.io)
   - Tutorials/guides
 
-### Ownership (TBD)
+### Ownership
 - Ownership for New Data Products
 - Ownership for Legacy Data Products
 
-### Other
-- Generic Policy
 
-## Template
+## Architecture Decisions
 
-- [Template](policies/template.md)
+While it is not the federated governance group's actual job to define the architecture of the data platform, 
+architecture decisions have consequences for global policies and vice versa, e.g. for policy automation and monitoring.
+
+Architecture decisions and policies are both formulated as Architecture Decision Records (ADRs) using this [template](policies/template.md).
+
+_Note that some examples are only applicable in certain contexts or with specific data platforms._
+
+
+### Data Platform
+
+- [AWS S3 as Storage for Data Products](architecture-decisions/data-platform/aws-s3-as-storage-for-data-products.md)
+- [AWS Athena as Query-Engine](architecture-decisions/data-platform/aws-athena-as-query-engine.md)
+- AWS Redshift as Data Platform
+- GCP BigQuery as Data Platform
+- GCP Cloud Storage as Storage for Data Products
+- Azure Synapse Analytics as Data Platform
+- [Azure ADLS as Storage for Data Products](architecture-decisions/data-platform/azure-adls-as-storage-for-data-products.md)
+- Snowflake as Data Platform
+- [Databricks as Data Platform](architecture-decisions/data-platform/databricks-as-data-platform.md)
+- Presto as On-Premise Query-Engine
+- MinIO as On-Premise Storage for Data Products
