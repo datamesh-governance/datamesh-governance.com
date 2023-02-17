@@ -52,16 +52,17 @@ After forming the group with its members, in the first meeting the collaboration
 
 [//]: # (Decision Process, Policy Template, Adoption Tracking Process, Data Platform Requirements and Tracking)
 
-## Architecture Decisions
-
-While it is not the federated governance group's actual job to define the architecture of the data platform, 
-architecture decisions have consequences for global policies and vice versa, e.g. for policy automation and monitoring.
+## Decision Records
 
 Architecture decisions and policies are both formulated as Architecture Decision Records (ADRs) using this [template](policies/template.md).
 
-_Note that some examples are only applicable in certain contexts or with specific data platforms._
+## Data Platform
 
-### Data Platform
+While it is not the federated governance group's actual job to define the architecture of the data platform,
+decisions about the platform have consequences for global policies and vice versa, e.g. for policy automation and monitoring.
+The governance group always has to keep track of those decisions related to the data platform.
+
+_Note that some examples are only applicable in certain contexts or with specific data platforms._
 
 - [AWS S3 as Storage for Data Products](architecture-decisions/data-platform/aws-s3-as-storage-for-data-products.md)
 - [AWS Athena as Query-Engine](architecture-decisions/data-platform/aws-athena-as-query-engine.md)
@@ -171,7 +172,7 @@ _Note that some examples are only applicable in certain contexts or with specifi
 
 - Observability Metrics
 - Cost reporting
- 
+
 ### Self-service
 
 - Data Product Creation
