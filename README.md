@@ -193,6 +193,13 @@ _Note that some examples are only applicable in certain contexts or with specifi
 
 - Generic Policy
 
+## Quick Starters
+
+"Quick Starters" describe scenarios and point to potentially appropriate decisions. If the scenario fits one's own context, the appropriate decisions can be found quickly and checked for applicability.
+
+- GCP as cloud infrastructure
+- ...
+
 ## Template
 
 - [Template](policies/template.md)
