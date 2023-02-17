@@ -2,7 +2,6 @@
 
 A curated list of examples for [Data Mesh](https://www.datamesh-architecture.com) guiding values, architecture decisions, and global policies to support a federated governance group.
 
-
 ![Data Mesh Governance](images/governance.png)
 
 The data mesh governance group consists of representatives from the domain teams and the data platform team.
@@ -13,18 +12,17 @@ Together, they make sure that data products in the mesh are interoperable and ca
 
 However, it is always up to the domain teams to adhere to the policies.
 
-
-
 ## Guiding Values
 
-Guiding values are the fundamental beliefs we agree on when implementing data mesh governance. 
-They guide us to make the right choices and give justification for our decisions. 
+Guiding values are the fundamental beliefs we agree on when implementing data mesh governance.
+They guide us to make the right choices and give justification for our decisions.
 
 - Focus on usage
 - Optimize experience for generalist majority
+- Continous education
 - Embrace bounded contexts
 - Standardize for interoperability
-- Enforce consistent security 
+- Enforce consistent security
 - Design for automation
 
 ## Operating Model
@@ -33,18 +31,22 @@ The operating model defines the structure and processes of the  data mesh govern
 After forming the group with its members, in the first meeting the collaboration mode, communication channels and a policy repository needs to be decided on.
 
 ### Members
+
 - Members of the Governance Group
 
 ### Collaboration Mode
+
 - Asynchronous collaboration (no meetings)
 - Bi-weekly online meetings
 
 ### Communication Channels
+
 - [Microsoft Teams Channels](operating-model/communication-channels/microsoft-teams-channels.md)
 - [Slack Channels](operating-model/communication-channels/slack-channels.md)
 - Email Lists
 
 ### Policy Repository
+
 - Confluence
 - Git
 
@@ -58,7 +60,6 @@ architecture decisions have consequences for global policies and vice versa, e.g
 Architecture decisions and policies are both formulated as Architecture Decision Records (ADRs) using this [template](policies/template.md).
 
 _Note that some examples are only applicable in certain contexts or with specific data platforms._
-
 
 ### Data Platform
 
@@ -77,6 +78,7 @@ _Note that some examples are only applicable in certain contexts or with specifi
 ## Policies
 
 ### Interoperability
+
 - Data Product Specification
   - [No Formal Data Product Specification](policies/interoperability/data-product-specification/01-no-formal-data-product-specification.md)
   - [Open Data Product Specification](policies/interoperability/data-product-specification/02-open-data-product-specification.md)
@@ -96,6 +98,7 @@ _Note that some examples are only applicable in certain contexts or with specifi
 - Naming Conventions (environment, database, table, column, file, bucket, ...)
 
 ### Isolation
+
 - Project structure
   - [[BigQuery] One project per data product](policies/isolation/project-structure/bigquery-one-project-per-dataproduct.md)
   - [[BigQuery] One dataset per data product](policies/isolation/project-structure/bigquery-one-dataset-per-dataproduct.md)
@@ -107,8 +110,8 @@ _Note that some examples are only applicable in certain contexts or with specifi
 - Separate Database per Domain Team
 - Separate Schema per Domain Team
 
-
 ### Discoverability
+
 - Data Catalog
   - [AWS Glue Data Catalog](policies/discoverability/data-catalog/aws-glue-data-catalog-as-data-catalog.md)
   - GCP Dataplex
@@ -122,10 +125,12 @@ _Note that some examples are only applicable in certain contexts or with specifi
 - Mandatory Tags
 
 ### Quality
+
 - [Retire unused data products after 6 months](policies/quality/retire-unused-data-products.md)
 - Minimum level quality of a data product
 
 ### Documentation
+
 - Documentation of data products
   - Wiki
   - Data Catalog
@@ -133,6 +138,7 @@ _Note that some examples are only applicable in certain contexts or with specifi
 - Schema Format
 
 ### Access Control
+
 - Access Request
   - Ticket with manual steps
   - Decentralized self-service via Pull Requests
@@ -142,6 +148,7 @@ _Note that some examples are only applicable in certain contexts or with specifi
 - Reassess after x month
 
 ### Consent Management
+
 - Consents Provided by Checkout Domain
 
 ### Privacy & Compliance
@@ -155,24 +162,29 @@ _Note that some examples are only applicable in certain contexts or with specifi
 - Right to be Forgotten By Tombstone Events
 
 ### Security
+
 - [Encryption at Rest](policies/security/encryption-at-rest.md)
 - Encryption at Transit
 - VPC
 
 ### Monitoring
+
 - Observability Metrics
 - Cost reporting
  
 ### Self-service
+
 - Data Product Creation
   - Self-service app (Backstage.io)
   - Tutorials/guides
 
 ### Ownership (TBD)
+
 - Ownership for New Data Products
 - Ownership for Legacy Data Products
 
 ### Other
+
 - Generic Policy
 
 ## Template
