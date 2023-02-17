@@ -27,12 +27,17 @@ They guide us to make the right choices and give justification for our decisions
 
 ## Operating Model
 
-The operating model defines the structure and processes of the  data mesh governance group.
+The operating model defines the structure and processes of the data mesh governance group.
 After forming the group with its members, in the first meeting the collaboration mode, communication channels and a policy repository needs to be decided on.
 
 ### Members
 
-- Members of the Governance Group
+- Platform Team Representatives
+- Data Analyst Representatives
+- Development Team representatives
+  - [Domain Representatives](operating-model/members/domain-representatives.md)
+  - [One Representative](operating-model/members/one-representative.md)
+  - Team Representatives
 
 ### Collaboration Mode
 
