@@ -13,8 +13,6 @@ Together, they make sure that data products in the mesh are interoperable and ca
 
 However, it is always up to the domain teams to adhere to the policies.
 
-
-
 ## Guiding Values
 
 Guiding values are the fundamental beliefs we agree on when implementing data mesh governance. 
@@ -22,9 +20,10 @@ They guide us to make the right choices and give justification for our decisions
 
 - Focus on usage
 - Optimize experience for generalist majority
+- Continous education
 - Embrace bounded contexts
 - Standardize for interoperability
-- Enforce consistent security 
+- Enforce consistent security
 - Design for automation
 
 ## Operating Model
@@ -33,29 +32,38 @@ The operating model defines the structure and processes of the  data mesh govern
 After forming the group with its members, in the first meeting the collaboration mode, communication channels and a policy repository needs to be decided on.
 
 ### Members
-- Members of the Governance Group
+
+- Platform Team Representatives
+- Data Analyst Representatives
+- Development Team representatives
+  - [Domain Representatives](operating-model/members/domain-representatives.md)
+  - [One Representative](operating-model/members/one-representative.md)
+  - Team Representatives
 
 ### Collaboration Mode
+
 - Asynchronous collaboration (no meetings)
 - Bi-weekly online meetings
 
 ### Communication Channels
+
 - [Microsoft Teams Channels](operating-model/communication-channels/microsoft-teams-channels.md)
 - [Slack Channels](operating-model/communication-channels/slack-channels.md)
 - Email Lists
 
 ### Policy Repository
+
 - Confluence
 - Git
 
 [//]: # (Decision Process, Policy Template, Adoption Tracking Process, Data Platform Requirements and Tracking)
-
 
 ## Policies
 
 [Policy Template](policies/template.md)
 
 ### Interoperability
+
 - Data Product Specification
   - [No Formal Data Product Specification](policies/interoperability/data-product-specification/01-no-formal-data-product-specification.md)
   - [Open Data Product Specification](policies/interoperability/data-product-specification/02-open-data-product-specification.md)
@@ -75,6 +83,7 @@ After forming the group with its members, in the first meeting the collaboration
 - Naming Conventions (environment, database, table, column, file, bucket, ...)
 
 ### Isolation
+
 - Project structure
   - [[BigQuery] One project per data product](policies/isolation/project-structure/bigquery-one-project-per-dataproduct.md)
   - [[BigQuery] One dataset per data product](policies/isolation/project-structure/bigquery-one-dataset-per-dataproduct.md)
@@ -101,10 +110,12 @@ After forming the group with its members, in the first meeting the collaboration
 - Mandatory Tags
 
 ### Quality
+
 - [Retire unused data products after 6 months](policies/quality/retire-unused-data-products.md)
 - Minimum level quality of a data product
 
 ### Documentation
+
 - Documentation of data products
   - Wiki
   - Data Catalog
@@ -112,6 +123,7 @@ After forming the group with its members, in the first meeting the collaboration
 - Schema Format
 
 ### Access Control
+
 - Access Request
   - Ticket with manual steps
   - Decentralized self-service via Pull Requests
@@ -121,6 +133,7 @@ After forming the group with its members, in the first meeting the collaboration
 - Reassess after x month
 
 ### Consent Management
+
 - Consents Provided by Checkout Domain
 
 ### Privacy & Compliance
@@ -134,35 +147,38 @@ After forming the group with its members, in the first meeting the collaboration
 - Right to be Forgotten By Tombstone Events
 
 ### Security
+
 - [Encryption at Rest](policies/security/encryption-at-rest.md)
 - Encryption at Transit
 - VPC
 
 ### Monitoring
+
 - Observability Metrics
 - Cost reporting
- 
+
 ### Self-service
+
 - Data Product Creation
   - Self-service app (Backstage.io)
   - Tutorials/guides
 
 ### Ownership
+
 - Ownership for New Data Products
 - Ownership for Legacy Data Products
 
-
-## Architecture Decisions
-
-While it is not the federated governance group's actual job to define the architecture of the data platform, 
-architecture decisions have consequences for global policies and vice versa, e.g. for policy automation and monitoring.
+## Decision Records
 
 Architecture decisions and policies are both formulated as Architecture Decision Records (ADRs) using this [template](policies/template.md).
 
+## Data Platform
+
+While it is not the federated governance group's actual job to define the architecture of the data platform,
+decisions about the platform have consequences for global policies and vice versa, e.g. for policy automation and monitoring.
+The governance group always has to keep track of those decisions related to the data platform.
+
 _Note that some examples are only applicable in certain contexts or with specific data platforms._
-
-
-### Data Platform
 
 - [AWS S3 as Storage for Data Products](architecture-decisions/data-platform/aws-s3-as-storage-for-data-products.md)
 - [AWS Athena as Query-Engine](architecture-decisions/data-platform/aws-athena-as-query-engine.md)
