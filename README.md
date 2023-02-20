@@ -1,6 +1,6 @@
 # Data Mesh Governance by Example
 
-A curated list of examples for [Data Mesh](https://www.datamesh-architecture.com) guiding values, architecture decisions, and global policies to support a federated governance group.
+Curated examples for [Data Mesh](https://www.datamesh-architecture.com) [guiding values](#guiding-values), an [operating model](#operating-model), and [global policies](#policies) to support a federated governance group.
 
 
 ![Data Mesh Governance](images/governance.png)
