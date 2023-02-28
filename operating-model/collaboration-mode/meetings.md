@@ -12,21 +12,18 @@ We use the following agenda as a template for every meeting.
 
 ### Meeting Agenda
 
-Welcome
-- Show usage metrics as key result
-- Celebrate new usages of data products
-
-Evaluate
-- Discuss accepted policies, based on feedback
-- Track platform implementation of accepted policies
-- Track team adoption of accepted policies
-
-Elaborate
-- Work together to formulate policies
-- Discuss options
-
-Decide
-- Agree on proposed policies
+1. Welcome
+  - Show usage metrics as key result
+  - Celebrate new usages of data products
+2. Evaluate
+  - Discuss accepted policies, based on feedback
+  - Track platform implementation of accepted policies
+  - Track team adoption of accepted policies
+3. Elaborate
+  - Work together to formulate policies
+  - Discuss options
+4. Decide
+  - Agree on proposed policies
 
 ## Consequences
 
