@@ -2,29 +2,23 @@
 
 Curated examples for [Data Mesh](https://www.datamesh-architecture.com) [guiding values](#guiding-values), an [operating model](#operating-model), and [global policies](#policies) to support a federated governance group.
 
+<img src="images/governance.png" alt="Data Mesh Governance" width="1029">
 
-![Data Mesh Governance](images/governance.png)
-
-The data mesh governance group consists of representatives from the domain teams and the data platform team.
+The [data mesh governance group](operating-model/members/members.md) consists of representatives from the domain teams and the data platform team.
 
 They are temporarily supported by a subject-matter experts, to address special issues, e.g. concerning legal, compliance, and security.
 
 Together, they make sure that data products in the mesh are interoperable and can be used securely. For this, they agree on a few architectural decisions and global policies. To make it easy for domain teams to implement the policies, they specify the requirements for the data platform to automate the policies as much as possible.
-
-However, it is always up to the domain teams to adhere to the policies.
-
-
 
 ## Guiding Values
 
 Guiding values are the fundamental beliefs we agree on when implementing data mesh governance. 
 They guide us to make the right choices and give justification for our decisions. 
 
-- Focus on usage
+- Promote the usage of data products
 - Optimize experience for generalist majority
-- Embrace bounded contexts
 - Standardize for interoperability
-- Enforce consistent security 
+- Enforce consistent security
 - Design for automation
 
 ## Operating Model
@@ -33,29 +27,39 @@ The operating model defines the structure and processes of the  data mesh govern
 After forming the group with its members, in the first meeting the collaboration mode, communication channels and a policy repository needs to be decided on.
 
 ### Members
-- Members of the Governance Group
+
+- [Governance Group Members](operating-model/members/members.md)
 
 ### Collaboration Mode
+
+- Regular online meetings
 - Asynchronous collaboration (no meetings)
-- Bi-weekly online meetings
+
+### Decision Making
+
+- Consent
+- Consensus
+- Democratic
 
 ### Communication Channels
+
 - [Microsoft Teams Channels](operating-model/communication-channels/microsoft-teams-channels.md)
 - [Slack Channels](operating-model/communication-channels/slack-channels.md)
 - Email Lists
 
 ### Policy Repository
+
 - Confluence
 - Git
 
 [//]: # (Decision Process, Policy Template, Adoption Tracking Process, Data Platform Requirements and Tracking)
-
 
 ## Policies
 
 [Policy Template](policies/template.md)
 
 ### Interoperability
+
 - Data Product Specification
   - [No Formal Data Product Specification](policies/interoperability/data-product-specification/01-no-formal-data-product-specification.md)
   - [Open Data Product Specification](policies/interoperability/data-product-specification/02-open-data-product-specification.md)
@@ -75,6 +79,7 @@ After forming the group with its members, in the first meeting the collaboration
 - Naming Conventions (environment, database, table, column, file, bucket, ...)
 
 ### Isolation
+
 - Project structure
   - [[BigQuery] One project per data product](policies/isolation/project-structure/bigquery-one-project-per-dataproduct.md)
   - [[BigQuery] One dataset per data product](policies/isolation/project-structure/bigquery-one-dataset-per-dataproduct.md)
@@ -101,10 +106,12 @@ After forming the group with its members, in the first meeting the collaboration
 - Mandatory Tags
 
 ### Quality
+
 - [Retire unused data products after 6 months](policies/quality/retire-unused-data-products.md)
 - Minimum level quality of a data product
 
 ### Documentation
+
 - Documentation of data products
   - Wiki
   - Data Catalog
@@ -112,16 +119,18 @@ After forming the group with its members, in the first meeting the collaboration
 - Schema Format
 
 ### Access Control
+
 - Access Request
   - Ticket with manual steps
   - Decentralized self-service via Pull Requests
   - Central self-service app with decentralized handlers
 - Access granted through AWS IAM Policies
-- ACLs managed by Domain Teams
+- ACLs managed by domain teams
 - Reassess after x month
 
 ### Consent Management
-- Consents Provided by Checkout Domain
+
+- One domain published consents as data product
 
 ### Privacy & Compliance
 
@@ -134,33 +143,33 @@ After forming the group with its members, in the first meeting the collaboration
 - Right to be Forgotten By Tombstone Events
 
 ### Security
+
 - [Encryption at Rest](policies/security/encryption-at-rest.md)
 - Encryption at Transit
 - VPC
 
 ### Monitoring
+
 - Observability Metrics
 - Cost reporting
- 
+
 ### Self-service
+
 - Data Product Creation
   - Self-service app (Backstage.io)
   - Tutorials/guides
 
 ### Ownership
+
 - Ownership for New Data Products
 - Ownership for Legacy Data Products
 
 
 ## Architecture Decisions
 
-While it is not the federated governance group's actual job to define the architecture of the data platform, 
-architecture decisions have consequences for global policies and vice versa, e.g. for policy automation and monitoring.
-
-Architecture decisions and policies are both formulated as Architecture Decision Records (ADRs) using this [template](policies/template.md).
-
-_Note that some examples are only applicable in certain contexts or with specific data platforms._
-
+While it is not the federated governance group's actual job to define the architecture of the data platform,
+decisions about the platform have consequences for global policies and vice versa, e.g. for policy automation and monitoring.
+The governance group always has to keep track of those decisions related to the data platform.
 
 ### Data Platform
 
