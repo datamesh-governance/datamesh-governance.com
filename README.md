@@ -2,26 +2,21 @@
 
 Curated examples for [Data Mesh](https://www.datamesh-architecture.com) [guiding values](#guiding-values), an [operating model](#operating-model), and [global policies](#policies) to support a federated governance group.
 
+<img src="images/governance.png" alt="Data Mesh Governance" width="1029">
 
-![Data Mesh Governance](images/governance.png)
-
-The data mesh governance group consists of representatives from the domain teams and the data platform team.
+The [data mesh governance group](operating-model/members/members.md) consists of representatives from the domain teams and the data platform team.
 
 They are temporarily supported by a subject-matter experts, to address special issues, e.g. concerning legal, compliance, and security.
 
 Together, they make sure that data products in the mesh are interoperable and can be used securely. For this, they agree on a few architectural decisions and global policies. To make it easy for domain teams to implement the policies, they specify the requirements for the data platform to automate the policies as much as possible.
-
-However, it is always up to the domain teams to adhere to the policies.
 
 ## Guiding Values
 
 Guiding values are the fundamental beliefs we agree on when implementing data mesh governance. 
 They guide us to make the right choices and give justification for our decisions. 
 
-- Focus on usage
+- Promote the usage of data products
 - Optimize experience for generalist majority
-- Continous education
-- Embrace bounded contexts
 - Standardize for interoperability
 - Enforce consistent security
 - Design for automation
@@ -33,17 +28,18 @@ After forming the group with its members, in the first meeting the collaboration
 
 ### Members
 
-- Platform Team Representatives
-- Data Analyst Representatives
-- Development Team representatives
-  - [Domain Representatives](operating-model/members/domain-representatives.md)
-  - [One Representative](operating-model/members/one-representative.md)
-  - Team Representatives
+- [Governance Group Members](operating-model/members/members.md)
 
 ### Collaboration Mode
 
+- Regular online meetings
 - Asynchronous collaboration (no meetings)
-- Bi-weekly online meetings
+
+### Decision Making
+
+- Consent
+- Consensus
+- Democratic
 
 ### Communication Channels
 
@@ -129,12 +125,12 @@ After forming the group with its members, in the first meeting the collaboration
   - Decentralized self-service via Pull Requests
   - Central self-service app with decentralized handlers
 - Access granted through AWS IAM Policies
-- ACLs managed by Domain Teams
+- ACLs managed by domain teams
 - Reassess after x month
 
 ### Consent Management
 
-- Consents Provided by Checkout Domain
+- One domain published consents as data product
 
 ### Privacy & Compliance
 
@@ -168,17 +164,14 @@ After forming the group with its members, in the first meeting the collaboration
 - Ownership for New Data Products
 - Ownership for Legacy Data Products
 
-## Decision Records
 
-Architecture decisions and policies are both formulated as Architecture Decision Records (ADRs) using this [template](policies/template.md).
-
-## Data Platform
+## Architecture Decisions
 
 While it is not the federated governance group's actual job to define the architecture of the data platform,
 decisions about the platform have consequences for global policies and vice versa, e.g. for policy automation and monitoring.
 The governance group always has to keep track of those decisions related to the data platform.
 
-_Note that some examples are only applicable in certain contexts or with specific data platforms._
+### Data Platform
 
 - [AWS S3 as Storage for Data Products](architecture-decisions/data-platform/aws-s3-as-storage-for-data-products.md)
 - [AWS Athena as Query-Engine](architecture-decisions/data-platform/aws-athena-as-query-engine.md)
