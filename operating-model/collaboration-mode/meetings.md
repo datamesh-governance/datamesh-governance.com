@@ -24,6 +24,8 @@ We use the following agenda as a template for every meeting.
   - Discuss options
 4. Decide
   - Agree on proposed policies
+5. Closing
+  - Feedback
 
 ## Consequences
 
