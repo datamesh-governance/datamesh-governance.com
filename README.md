@@ -32,7 +32,7 @@ After forming the group with its members, in the first meeting the collaboration
 
 ### Collaboration Mode
 
-- Regular online meetings
+- [Regular online meetings](operating-model/meetings/meetings.md)
 - Asynchronous collaboration (no meetings)
 
 ### Decision Making
