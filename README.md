@@ -37,7 +37,7 @@ After forming the group with its members, in the first meeting the collaboration
 
 ### Decision Making
 
-- Consent
+- [Consent](operating-model/decision-making/consent.md)
 - Consensus
 - Democratic
 
