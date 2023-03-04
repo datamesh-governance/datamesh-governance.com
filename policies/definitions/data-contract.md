@@ -5,7 +5,7 @@ Status: Proposed
 
 ## Context
 
-What is our understanding of a _data contract_?
+What do we mean when we say _a data contract_?
 
 ## Decision
 
