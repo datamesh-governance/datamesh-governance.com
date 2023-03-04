@@ -58,6 +58,11 @@ After forming the group with its members, in the first meeting the collaboration
 
 [Policy Template](policies/template.md)
 
+### Definitions
+
+- Data Product
+- [Data Contract](policies/definitions/data-contract.md)
+
 ### Interoperability
 
 - Data Product Specification
