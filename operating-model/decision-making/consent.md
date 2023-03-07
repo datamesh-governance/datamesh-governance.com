@@ -1,3 +1,5 @@
+[Data Mesh Governance](https://www.datamesh-governance.com/) / [Operating Model](https://www.datamesh-governance.com/#operating-model) / [Decision Making](https://www.datamesh-governance.com/#decision-making)
+
 # Consent
 
 ## Context

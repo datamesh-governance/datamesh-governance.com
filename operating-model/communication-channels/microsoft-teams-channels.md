@@ -1,3 +1,5 @@
+[Data Mesh Governance](https://www.datamesh-governance.com/) / [Operating Model](https://www.datamesh-governance.com/#operating-model) / [Communication Channels](https://www.datamesh-governance.com/#communication-channels)
+
 # Microsoft Teams Channels
 
 ## Context

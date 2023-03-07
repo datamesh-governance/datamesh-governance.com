@@ -1,4 +1,12 @@
-## Governance Group Members
+[Data Mesh Governance](https://www.datamesh-governance.com/) / [Operating Model](https://www.datamesh-governance.com/#operating-model) / [Members](https://www.datamesh-governance.com/#members)
+
+# Governance Group Members
+
+## Context
+
+Who should be part of the Data Mesh Governance Group?
+
+## Decision
 
 Target size: 5-7 members (+ subject matter experts and managers)
 
@@ -22,7 +30,7 @@ Target size: 5-7 members (+ subject matter experts and managers)
   - Decide on conflicting priorities.
 
 
-### Follow-up Questions
+### Consequences
 
 - How to limit the members of the governance group, if there are too many data product owners?
   - [Local Data Groups](/operating-model/members/local-data-groups.md)

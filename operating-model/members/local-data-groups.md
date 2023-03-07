@@ -1,3 +1,5 @@
+[Data Mesh Governance](https://www.datamesh-governance.com/) / [Operating Model](https://www.datamesh-governance.com/#operating-model) / [Members](https://www.datamesh-governance.com/#members)
+
 # Local Data Groups
 
 ## Context

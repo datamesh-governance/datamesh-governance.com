@@ -1,3 +1,5 @@
+[Data Mesh Governance](https://www.datamesh-governance.com/) / [Operating Model](https://www.datamesh-governance.com/#operating-model) / [Collaboration Mode](https://www.datamesh-governance.com/#collaboration-mode)
+
 # Regular Governance Meetings
 
 How are the policies created, reviewed, discussed, and agreed upon?
