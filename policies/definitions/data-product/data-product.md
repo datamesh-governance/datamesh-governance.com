@@ -26,7 +26,7 @@ A data product includes:
 
 **Conceptual Distinction**
 
-When we say _a data product_, we explicitly do not mean this related concepts: 
+When we say _a data product_, we explicitly do not mean these related concepts: 
  
 - _Data as a Product:_ The principle to apply product thinking on analytical data
 - _Data is our Product:_ We sell data to our customers
