@@ -24,6 +24,14 @@ A data product includes:
 - Access control
 - Platform dependencies (compute and storage resources)
 
+**Conceptual Distinction**
+
+When we say _a data product_, we explicitly do not mean this related concepts: 
+ 
+- _Data as a Product:_ The principle to apply product thinking on analytical data
+- _Data is our Product:_ We sell data to our customers
+
+
 ## Consequences
 
 - A data product is a software component that needs to be developed and maintained by a dedicated team
@@ -37,7 +45,3 @@ A data product includes:
 - A data product can be specified as a Terraform module that deploys the data product on the data platform through a CI/CD pipeline
 - The data platform team is responsible to provide the Terraform module
 
-## Considered Alternatives
-
-- Data as a Product: The principle to apply product thinking on analytical data
-- Data is our Product: We sell data to our customers
