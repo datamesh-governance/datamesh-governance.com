@@ -60,9 +60,9 @@ After forming the group with its members, in the first meeting the collaboration
 
 ### Definitions
 
-- Domain
-- Data Product
-- [Data Contract](policies/definitions/data-contract.md)
+[//]: # (- Domain)
+- [Data Product](policies/definitions/data-product/data-product.md)
+- [Data Contract](policies/definitions/data-contract/data-contract.md)
 
 ### Interoperability
 
