@@ -1,6 +1,8 @@
+[Data Mesh Governance](https://www.datamesh-governance.com/) / [Policies](https://www.datamesh-governance.com/#policies) / [Isolation](https://www.datamesh-governance.com/#isolation) / Project Structure
+
 # One dataset per data product
 
-Category: Interoperability  
+Category: Isolation  
 Platform: BigQuery
 
 [//]: # (order:2)
