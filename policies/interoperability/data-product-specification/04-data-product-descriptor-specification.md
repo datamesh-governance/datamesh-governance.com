@@ -23,10 +23,7 @@ We specify data products with Data Product Descriptor Specification.
 
 ## Automation
 
-The specification file needs to be curated manually by the domain team when developing and maintaining a data product.
+- The specification file needs to be curated manually by the domain team when developing and maintaining a data product.
+- It may be a foundation for further automation through the data platform.
+- The validity of the syntax can be checked through a provided [JSON schema](https://dpds.opendatamesh.org/resources/schemas/1.0.0-DRAFT.json).
 
-It may be a foundation for further automation through the data platform.
-
-## Monitoring
-
-The validity of the syntax can be checked through a provided [JSON schema](https://dpds.opendatamesh.org/resources/schemas/1.0.0-DRAFT.json).

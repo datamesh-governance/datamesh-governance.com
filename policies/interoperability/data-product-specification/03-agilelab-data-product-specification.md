@@ -22,8 +22,5 @@ We specify data products with Agile Lab's Data Product Specification.
 
 ## Automation
 
-The YAML file needs to be curated manually by the domain team when developing and maintaining a data product.
-
-It may be a foundation for further automation through the data platform.
-
-## Monitoring
+- The YAML file needs to be curated manually by the domain team when developing and maintaining a data product.
+- It may be a foundation for further automation through the data platform.

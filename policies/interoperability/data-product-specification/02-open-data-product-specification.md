@@ -27,5 +27,3 @@ We specify data products with the Open Data Product Specification.
 The JSON file needs to be curated manually by the domain team when developing and maintaining a data product.
 
 It may be a foundation for further automation through the data platform.
-
-## Monitoring
