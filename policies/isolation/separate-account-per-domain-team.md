@@ -1,6 +1,8 @@
+[Data Mesh Governance](https://www.datamesh-governance.com/) / [Policies](https://www.datamesh-governance.com/#policies) / [Isolation](https://www.datamesh-governance.com/#isolation)
+
 # Separate Account per Domain Team
 
-Category: Isolation
+Category: Isolation  
 Platform: AWS  
 
 ## Context

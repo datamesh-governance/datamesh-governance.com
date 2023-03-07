@@ -1,3 +1,5 @@
+[Data Mesh Governance](https://www.datamesh-governance.com/) / [Policies](https://www.datamesh-governance.com/#policies) / [Discoverability](https://www.datamesh-governance.com/#discoverability) / Data Catalog
+
 # AWS Glue Data Catalog as Data Catalog for Data Products
 
 Category: Discoverability

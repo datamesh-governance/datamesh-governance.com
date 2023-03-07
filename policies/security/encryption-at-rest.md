@@ -1,8 +1,9 @@
+[Data Mesh Governance](https://www.datamesh-governance.com/) / [Policies](https://www.datamesh-governance.com/#policies) / [Security](https://www.datamesh-governance.com/#security)
+
 # Encryption at rest
 
 Category: Security  
-Platform: Databricks
-Tags: encryption  
+Platform: Azure Databricks 
 
 ## Context
 
@@ -30,8 +31,5 @@ We use Microsoft-managed encryption keys (MMK).
 ## Automation
 
 - Data platform guarantees encryption at rest 
-
-## Monitoring
-
-- Not required, encryption-at-rest is enabled in all Storage Accounts
+- Nothing to be done, encryption-at-rest is enabled in all Azure Storage Accounts by default
 
