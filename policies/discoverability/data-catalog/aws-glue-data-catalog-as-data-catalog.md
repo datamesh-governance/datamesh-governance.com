@@ -14,20 +14,22 @@ How can we register data products in a central place for other teams to discover
 
 ## Decision
 
-We use AWS Glue Data Catalog as Data Catalog for Data Products
+We use AWS Glue Data Catalog as catalog for data products.
 
-![Example of a table in AWS Glue Data Catalog](/images/aws-glue-data-catalog-table.png)
+We use a central AWS governance account that hosts the data catalog that links to data that lives in domain team's AWS account.
+
+![Example of a table in AWS Glue Data Catalog](https://www.datamesh-governance.com/images/aws-glue-data-catalog-table.png)
 
 ## Consequences
 
 - One AWS accounts has exactly one AWS Glue Data Catalog
 - One Data Catalog can contain multiple databases
 - One database can contain multiple tables
-- A table refers to an S3 data store that can live in the same AWS account or in another AWS account
-- The AWS Glue Data Catalog is basically a Hive Metastore, that integrates well with many data tools
+- A table refers to an S3 data store that lives in a domain team's AWS account
+- The AWS Glue Data Catalog is basically a Hive Metastore, with all its limitations
+- Only data products that live inside AWS cloud and are supported by the AWS Glue Data Catalog can be indexed.
 - Databases and tables defined in AWS Glue Data Catalog are also available in AWS Lake Formation for further data governance capabilities
 - AWS Glue Data Catalog search capabilities are limited, e.g. cannot search for tables tagged with a specific property, such as `dataproduct=true`
-- No cross-account searches or references. We need a policy under which AWS account we register data products
 - An [AWS Glue API](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog.html) is available for further automation
 
 ## Considered Alternatives
@@ -37,7 +39,4 @@ We use AWS Glue Data Catalog as Data Catalog for Data Products
 
 ## Automation
 
-- not required, a Glue Data Catalog catalog is created by default with an AWS account
-
-## Monitoring
-
+- Use AWS EventBridge to propagate catalog entries, resources and permissions to the central governance account.

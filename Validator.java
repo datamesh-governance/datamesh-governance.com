@@ -73,7 +73,6 @@ public class Validator {
         assertLine(errors, policyFile, lines, "## Decision");
         assertLine(errors, policyFile, lines, "## Consequences");
         assertLine(errors, policyFile, lines, "## Automation");
-        assertLine(errors, policyFile, lines, "## Monitoring");
         assertPlatformInList(errors, policyFile, lines);
 
         for (var otherPolicyOption : policyOptions) {

@@ -34,10 +34,4 @@ Entries are separated with a new line ([ndson](http://ndjson.org)).
 
 ## Automation
 
-TBD
-
-## Monitoring
-
-- Query all data products periodically and try to deserialize latest file
-- Query all data products periodically and check suffix
-- Webhook after each data product publishing with tag `serialization:json`
+- Automated testing: Query all data products periodically and try to deserialize latest file
