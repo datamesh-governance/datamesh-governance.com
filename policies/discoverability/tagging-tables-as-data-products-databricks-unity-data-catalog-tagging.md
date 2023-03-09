@@ -72,6 +72,4 @@ TBLPROPERTIES(
 ;
 ```
 
-## Monitoring
-
-- Poll the [Unity Catalog API](https://api-docs.databricks.com/rest/latest/unity-catalog-api-specification-2-1.html), query for all tables and evaluate the `properties` field in `TableInfo` object responses.
+- Automated tests: Poll the [Unity Catalog API](https://api-docs.databricks.com/rest/latest/unity-catalog-api-specification-2-1.html), query for all tables and evaluate the `properties` field in `TableInfo` object responses.

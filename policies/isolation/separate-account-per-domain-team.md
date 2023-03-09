@@ -36,6 +36,4 @@ We give each team a separate AWS account.
 
 - The data platform team is asked to automate the creation of AWS accounts using self-services 
 - e.g. by a pull-request in a Terraform repository
-
-## Monitoring
-
+- e.g. by a self-service in backstage.io
