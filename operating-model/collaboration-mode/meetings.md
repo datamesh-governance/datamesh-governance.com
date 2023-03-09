@@ -2,6 +2,8 @@
 
 # Regular Governance Meetings
 
+## Context
+
 How are the policies created, reviewed, discussed, and agreed upon?
 
 ## Decision

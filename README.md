@@ -33,6 +33,7 @@ After forming the group with its members, in the first meeting the collaboration
 ### Collaboration Mode
 
 - [Regular online meetings](operating-model/collaboration-mode/meetings.md)
+- [Local Data Groups](operating-model/collaboration-mode/local-data-groups.md)
 - Asynchronous collaboration (no meetings)
 
 ### Decision Making

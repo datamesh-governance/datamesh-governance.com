@@ -33,5 +33,5 @@ Target size: 5-7 members (+ subject matter experts and managers)
 ### Consequences
 
 - How to limit the members of the governance group, if there are too many data product owners?
-  - [Local Data Groups](/operating-model/members/local-data-groups.md)
+  - [Local Data Groups](/operating-model/collaboration-mode/local-data-groups.md)
   - Asynchronous working mode
