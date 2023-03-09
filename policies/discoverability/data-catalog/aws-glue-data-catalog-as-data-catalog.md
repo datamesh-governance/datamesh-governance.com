@@ -18,7 +18,8 @@ We use AWS Glue Data Catalog as catalog for data products.
 
 We use a central AWS governance account that hosts the data catalog that links to data that lives in domain team's AWS account.
 
-![Example of a table in AWS Glue Data Catalog](https://www.datamesh-governance.com/images/aws-glue-data-catalog-table.png)
+<img src="https://www.datamesh-governance.com/images/aws-glue-data-catalog-table.png" alt="Example of a table in AWS Glue Data Catalog" width="1024">
+
 
 ## Consequences
 

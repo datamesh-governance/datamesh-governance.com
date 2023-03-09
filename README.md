@@ -2,7 +2,7 @@
 
 Curated examples for [Data Mesh](https://www.datamesh-architecture.com) [guiding values](#guiding-values), an [operating model](#operating-model), and [global policies](#policies) to support a federated governance group.
 
-<img src="images/governance.png" alt="Data Mesh Governance" width="1029">
+<img src="images/governance.png" alt="Data Mesh Governance" width="1024">
 
 The [data mesh governance group](operating-model/members/members.md) consists of representatives from the domain teams and the data platform team.
 
