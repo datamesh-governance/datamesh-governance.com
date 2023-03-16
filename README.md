@@ -100,6 +100,12 @@ After forming the group with its members, in the first meeting the collaboration
 
 
 ### Discoverability
+- Data Product Inventory
+  - Confluence Wiki Page
+  - Backstage
+  - LeanIX
+  - Custom Web-Application
+  - Data Catalog
 - Data Catalog
   - [AWS Glue Data Catalog](policies/discoverability/data-catalog/aws-glue-data-catalog-as-data-catalog.md)
   - GCP Dataplex
@@ -107,7 +113,6 @@ After forming the group with its members, in the first meeting the collaboration
   - Databricks Unity
   - Collibra
   - Atlan
-  - Confluence
 - [Tagging Tables as Data Products](policies/discoverability/tagging-tables-as-data-products-databricks-unity-data-catalog-tagging.md)
 - Mandatory Ownership Information
 - Mandatory Tags
