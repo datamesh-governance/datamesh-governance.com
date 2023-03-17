@@ -72,6 +72,7 @@ After forming the group with its members, in the first meeting the collaboration
   - [Open Data Product Specification](policies/interoperability/data-product-specification/02-open-data-product-specification.md)
   - [Agile Lab Data Product Specification](policies/interoperability/data-product-specification/03-agilelab-data-product-specification.md)
   - [Data Product Descriptor Specification](policies/interoperability/data-product-specification/04-data-product-descriptor-specification.md)
+  - Terraform Modul Configuration
 - Address scheme
 - File Format
   - [Parquet File Format](policies/interoperability/file-format/parquet-file-format.md)
@@ -93,7 +94,7 @@ After forming the group with its members, in the first meeting the collaboration
   - [[BigQuery] One project per domain team](policies/isolation/project-structure/bigquery-one-project-per-domain-team.md)
   - AWS
   - Snowflake
-- Central account for the data catalog and governance
+- Central Governance Account
 - [Separate Account per Domain Team](policies/isolation/separate-account-per-domain-team.md)
 - Separate Database per Domain Team
 - Separate Schema per Domain Team
