@@ -2,6 +2,8 @@
 
 Curated examples for [Data Mesh](https://www.datamesh-architecture.com) [guiding values](#guiding-values), an [operating model](#operating-model), and [global policies](#policies) to support a federated governance group.
 
+We want this to be an open source collection of policy examples, driven by the community. Contribute by submitting a pull request on the [GitHub repository](https://github.com/datamesh-governance/datamesh-governance.com).
+
 <img src="images/governance.png" alt="Data Mesh Governance" width="1024">
 
 The [data mesh governance group](operating-model/members/members.md) consists of representatives from the domain teams and the data platform team.
