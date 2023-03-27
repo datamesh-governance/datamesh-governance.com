@@ -11,8 +11,8 @@ What do we mean when we say _a data contract_?
 
 ## Decision
 
-A data contract is a formal agreement between two parties (data product provider and data product consumer) or by the data product provider to all potential users. 
-It  specifies the guarantees about a provided data set and expectations concerning data product access.
+A data contract is a formal agreement between two parties (data product provider and data product consumer). 
+It specifies the guarantees about a provided data set and expectations concerning data product access.
 
 It covers:
 
@@ -86,8 +86,6 @@ It covers:
 
 ## Automation
 
-- The data contract can be formalized as a YAML document
-  - A YAML specification needs to be defined
-  - The plaform can check, if the data contract is well-defined
-- Data platform capabilities to export data contract to other systems, such as data catalog, data product inventory, data quality systems
-- Reassessment reminders and processes
+- Data contracts can be provided to all potential customers by the data product developers and accepted throught the data product consumer as a self-service. 
+- Data platform automates the creation of IAM identities, roles, and access policies
+- Reassessment reminder notification and automated contract renewal processes
