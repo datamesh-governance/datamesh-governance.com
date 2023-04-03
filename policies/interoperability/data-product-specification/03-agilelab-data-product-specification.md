@@ -271,6 +271,8 @@ Source: https://github.com/agile-lab-dev/Data-Product-Specification/blob/main/ex
 
 - Data product owners need to create and curate a [Data Product Specification](https://github.com/agile-lab-dev/Data-Product-Specification) YAML file.
 - A data product specification can help to define the characteristics, behavior, requirements, and usage of data products in a data mesh.
+- YAML only
+- A `dataContract` has a one-to-one relationship to the output port. It cannot be used to describe bilateral data contracts between data product provider and consumers.
 - Currently, there is no tooling support available in our data platform nor data catalog.
 - Licensed under Apache License 2.0
 - We accept to be early adaptor. We are not aware of any other company using this specification.
