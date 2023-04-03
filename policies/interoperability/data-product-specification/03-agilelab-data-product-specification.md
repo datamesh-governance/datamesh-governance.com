@@ -10,7 +10,7 @@ How do we specify the syntax and semantics of data products in a standardized wa
 
 ## Decision
 
-We specify data products with Agile Lab's Data Product Specification.
+We specify data products with Agile Lab's [Data Product Specification](https://github.com/agile-lab-dev/Data-Product-Specification).
 
 ### Example
 
