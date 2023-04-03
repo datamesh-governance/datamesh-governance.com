@@ -14,6 +14,8 @@ We specify data products with the [Open Data Product Specification 2.0](https://
 
 ### Example
 
+https://open-data-product-initiative.github.io/open-data-product-spec-2.0/#hello-world-example
+
 ```json
 {
    "product":{
