@@ -27,9 +27,12 @@ The environments are structurally identical.
 - Data product developers need to deploy their data products on all environments
 - Data product owners need to make sure that good-enough sample data is available in TEST environment for meaningful integration tests
   - Specific test-data requirements are defined in the data contract
-- TBD: Do I need to sign a data contract on each environment?
+  - Shape (number of rows, statistical distribution of values, null-fields) must be similar to PROD
+- Data contracts are also necessary for DEV and TEST for access control and lineage.
 
 ## Automation
 
 - The platform uses GitOps to provide structurally identical platforms
 - Data product developers use GitOps to deploy data products on each environment
+- Test data can be derived from production data using appropriate tools, provided that the data is appropriately processed (e.g. anonymized)
+- Automatic approval of data contract requests on DEV and TEST
