@@ -52,6 +52,7 @@ After forming the group with its members, in the first meeting the collaboration
 
 ### Policy Repository
 
+- [Data Mesh Manager](https://datamesh-manager.com/)
 - Confluence
 - Git
 
@@ -105,6 +106,7 @@ After forming the group with its members, in the first meeting the collaboration
 ### Discoverability
 - Data Product Inventory
   - Confluence Wiki Page
+  - [Data Mesh Manager](https://datamesh-manager.com/)
   - Backstage
   - LeanIX
   - Custom Web-Application
