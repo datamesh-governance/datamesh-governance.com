@@ -26,14 +26,10 @@ It covers:
   * Technology (files, tables, topics)
   * Format (Parquet, Delta, JSON, ...)
   * Global address
-* Syntax
+* Schema
   * Field names and types
   * Primary and foreign keys
   * Partitions
-* Semantics
-  * Context-specific description of datasets and fields
-  * Used well-known keys
-  * Documentation
 * Service-level objectives
   * Interval of change
   * Latency
@@ -42,36 +38,33 @@ It covers:
   * Availability
   * Performance
   * Data volume
-* Allowed usage patterns
+* Terms
+  * Allowed usage and access patterns
   * Query frequency
 * Security
   * The IAM role definition to grant
-* Data classification
-* Contract duration
-  * Test data delivery date
-  * Production data delivery date
-  * Next contract reassessment date
 * Costs and Billing
+* Contract duration
+  * Start date
+  * Notice period and end date
+  * Next reassessment date
 
 **Example**
 
-| Name                            | Value                                                                                                                                                                                                                                                                                                                                                    |
-|---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Data product**                | Webshop Orders                                                                                                                                                                                                                                                                                                                                           |
-| **Data product provider**           | Domain: Checkout<br>Data Product Owner: Nicky Cree (nicky.cree@example.com)                                                                                                                                                                                                                                                                              |
-| **Data product consumer**           | Domain: Controlling<br>Responsible contact: Aubrey Harlow (aubrey.harlow@example.com)                                                                                                                                                                                                                                                                    |
-| **Purpose**                         | Build a demand forecasting model                                                                                                                                                                                                                                                                                                                         |
-| **Output port**                     | BigQuery<br>Global Address: https://example.com/dataproducts/checkout/orders (Entrypoint to JDBC Connection URL, schema definition, documentation, observability metrics)                                                                                                                                                                                |
-| **Syntax**                          | Tables: orders, order_items                                                                                                                                                                                                                                                                                                                              |
-| **Semantics**                       | All successful orders that have been made in the online shop.<br> PII NOT INCLUDED                                                                                                                                                                                                                                                                       |
-| **Used well-known keys**            | order_id<br>webshop_customer_id<br>customer_number<br>address_id<br>paypal_transaction_id                                                                                                                                                                                                                                                                |
-| **Service-level objectives**        | _Interval of change:_ Continuous streaming<br>_Latency:_ < 60 seconds<br>_Completeness:_ All orders since 2020-01-01T00:00:00Z<br/>_Freshness:_ Near real time, max. 60 seconds delay<br>_Availability:_ 99.9%<br>_Performance:_ Query all orders of last 12 months < 30 seconds<br>_Data volume:_ 5,000-10,000 orders per day expected, ~50 KiB / order |
-| **Allowed usage patterns**          | Max queries per minute: 10<br/>Max data processing per day: 1 TiB<br/>Pub/Sub subscriptions                                                                                                                                                                                                                                                              |
-| **Security**                        | IAM service-account: serviceAccount:controlling-data-consumer@example-prod-data.iam.gserviceaccount.com                                                                                                                                                                                                                                                  |
-| **Costs and Billing**               | Implementation and operational costs are covered by the checkout domain until 2023-12-31.                                                                                                                                                                                                                                                                |
-| **Test data delivery date**         | 2023-04-01                                                                                                                                                                                                                                                                                                                                               |
-| **Production data delivery date**   | 2023-05-01                                                                                                                                                                                                                                                                                                                                               |
-| **Next contract reassessment date** | 2024-01-01                                                                                                                                                                                                                                                                                                                                               | 
+| Name                         | Value                                                                                                                                                                                                                                                                                                                                                    |
+|------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Data Product Provider**    | _Domain Team:_ Checkout<br>_Data Product:_ Webshop Orders<br>_Data Product Owner:_ Nicky Cree (nicky.cree@example.com)<br>_Output Port:_ bigquery_orders_latest_npii_v1                                                                                                                                                                                  |
+| **Data Product Consumer**    | _Domain Team:_ Controlling<br>_Responsible contact:_ Aubrey Harlow (aubrey.harlow@example.com)                                                                                                                                                                                                                                                           |
+| **Purpose**                  | Build a demand forecasting model                                                                                                                                                                                                                                                                                                                         |
+| **Schema**                   | https://example.com/checkout/webshop-orders/bigquery_orders_latest_npii_v1/schema.yaml                                                                                                                                                                                                                                                                   |
+| **Service-level objectives** | _Interval of change:_ Continuous streaming<br>_Latency:_ < 60 seconds<br>_Completeness:_ All orders since 2020-01-01T00:00:00Z<br/>_Freshness:_ Near real time, max. 60 seconds delay<br>_Availability:_ 99.9%<br>_Performance:_ Query all orders of last 12 months < 30 seconds<br>_Data volume:_ 5,000-10,000 orders per day expected, ~50 KiB / order |
+| **Terms**                    | Max queries per minute: 10<br/>Max data processing per day: 1 TiB<br/>Pub/Sub subscriptions                                                                                                                                                                                                                                                              |
+| **Security**                 | IAM service-account: serviceAccount:controlling-data-consumer@example-prod-data.iam.gserviceaccount.com                                                                                                                                                                                                                                                  |
+| **Costs and Billing**        | Implementation and operational costs are covered by the checkout domain until 2023-12-31.                                                                                                                                                                                                                                                                |
+| **Start date**               | 2023-04-01                                                                                                                                                                                                                                                                                                                                               |
+| **End date**                 |                                                                                                                                                                                                                                                                                                                                                          |
+| **Notice Period**            | 3 months                                                                                                                                                                                                                                                                                                                                                 |
+| **Next reassessment date**   | 2024-04-01                                                                                                                                                                                                                                                                                                                                               | 
 
 
 ## Consequences
@@ -81,10 +74,11 @@ It covers:
 - The data product can be extended as long as it is backward compatible with the contract
 - A defined purpose is a motivation for the domain team to share the data with others in the first place
 - Agreed service levels can be monitored, with an alerting system in place
+- A contract can be canceled 
 
 
 ## Automation
 
-- Data contracts can be provided to all potential customers by the data product developers and accepted throught the data product consumer as a self-service. 
-- Data platform automates the creation of IAM identities, roles, and access policies
-- Reassessment reminder notification and automated contract renewal processes
+- Data contracts can be provided to all potential customers by the data product developers and accepted through the data product consumer as a self-service. 
+- Data platform automates the creation and revocation of IAM identities, roles, and access policies
+- Reassessment reminder notification
