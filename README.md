@@ -161,6 +161,8 @@ After forming the group with its members, in the first meeting the collaboration
 - PHI (protected health info)
 - Data Retention Periods
 - Right to be Forgotten By Tombstone Events
+- Politically exposed person (PEP)
+- People in witness protection program
 
 ### Security
 
