@@ -206,3 +206,12 @@ The governance group always has to keep track of those decisions related to the 
 - [Databricks as Data Platform](architecture-decisions/data-platform/databricks-as-data-platform.md)
 - Presto as On-Premise Query-Engine
 - MinIO as On-Premise Storage for Data Products
+
+
+## Learn more
+
+### Scientific Literature
+
+- [Wider, Arif & Verma, Sumedha & Akhtar, Atif. (2023). Decentralized Data Governance as Part of a Data Mesh Platform: Concepts and Approaches. ](https://www.researchgate.net/publication/371399084_Decentralized_Data_Governance_as_Part_of_a_Data_Mesh_Platform_Concepts_and_Approaches)
+
+- [Joshi, D., Pratik, S., & Rao, M. P. (2021). Data governance in data mesh infrastructures: The Saxo bank case study. Proceedings of the International Conference on Electronic Business (ICEB), 21, 599–604.](https://aisel.aisnet.org/iceb2021/52/)
