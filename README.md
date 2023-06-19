@@ -210,6 +210,10 @@ The governance group always has to keep track of those decisions related to the 
 
 ## Learn more
 
+### Communities
+
+- [LinkedIn Group: Data Governance - Data mesh](https://www.linkedin.com/groups/9226364/)
+
 ### Scientific Literature
 
 - [Wider, Arif & Verma, Sumedha & Akhtar, Atif. (2023). Decentralized Data Governance as Part of a Data Mesh Platform: Concepts and Approaches. ](https://www.researchgate.net/publication/371399084_Decentralized_Data_Governance_as_Part_of_a_Data_Mesh_Platform_Concepts_and_Approaches)
