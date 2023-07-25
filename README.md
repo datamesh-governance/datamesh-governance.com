@@ -77,6 +77,8 @@ After forming the group with its members, in the first meeting the collaboration
   - [Data Product Descriptor Specification](policies/interoperability/data-product-specification/04-data-product-descriptor-specification.md)
   - [No Formal Data Product Specification](policies/interoperability/data-product-specification/01-no-formal-data-product-specification.md)
   - Terraform Modul Configuration
+- Data Contract Specification
+  - [datacontract-specification.com](https://datacontract-specification.com)
 - Address scheme
 - File Format
   - [Parquet File Format](policies/interoperability/file-format/parquet-file-format.md)
