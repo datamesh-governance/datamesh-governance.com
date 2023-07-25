@@ -71,7 +71,7 @@ After forming the group with its members, in the first meeting the collaboration
 ### Interoperability
 
 - Data Product Specification
-  - [Data Product Specification supported by the Data Mesh Manager](https://app.datamesh-manager.com/swagger/index.html#/Data%20Products/put_api_dataproducts__id_)
+  - [dataproduct-specification.com](https://dataproduct-specification.com)
   - [Open Data Product Specification](policies/interoperability/data-product-specification/02-open-data-product-specification.md)
   - [Agile Lab Data Product Specification](policies/interoperability/data-product-specification/03-agilelab-data-product-specification.md)
   - [Data Product Descriptor Specification](policies/interoperability/data-product-specification/04-data-product-descriptor-specification.md)
