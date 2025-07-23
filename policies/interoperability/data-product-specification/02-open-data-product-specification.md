@@ -10,7 +10,7 @@ How do we specify the syntax and semantics of data products in a standardized wa
 
 ## Decision
 
-We specify data products with the [Open Data Product Specification 2.0](https://open-data-product-initiative.github.io/open-data-product-spec-2.0/).
+We specify data products with the [Open Data Product Specification](https://opendataproducts.org/).
 
 ### Example
 
@@ -234,14 +234,14 @@ We specify data products with the [Open Data Product Specification 2.0](https://
 }
 ```
 
-Source: https://open-data-product-initiative.github.io/open-data-product-spec-2.0/#hello-world-example
+Source: https://opendataproducts.org/
 
 ## Consequences
 
 - The Open Data Product Specification is designed for data that is traded, e.g., on a marketplace. 
 - The specification is not optimized to describe data products as a deployment unit. The DataOps section attributes are limited, but could be extended.
 - The specification is extendable, custom attributes can be set with an `x-` prefix.
-- Data product owners need to create and curate an [Open Data Product Specification](https://open-data-product-initiative.github.io/open-data-product-spec-2.0/) JSON file.
+- Data product owners need to create and curate an [Open Data Product Specification](https://opendataproducts.org/) JSON file.
 - Currently, there is no tooling support available in data platforms nor data catalogs.
 - Licensed under [https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/)
 - We accept to be early adaptor. We are not aware of any other company using this specification.
